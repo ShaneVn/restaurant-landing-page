@@ -1,10 +1,33 @@
-import React from 'react';
-
-import './Header.css';
+import React from "react";
+import images from "../../constants/images";
+import { SubHeading } from "../../components";
 
 const Header = () => (
-  <div>
-    Header
+  <div className="app__wrapper section__padding bg-color_black ">
+    <div className="app__wrapper_img ">
+      <img src={images.welcome} alt="header_image" className="w-4/5" />
+    </div>
+
+    <div className="app__wrapper_info">
+      <SubHeading title={"Chase The New Flavor"} />
+      <h1 className="text-color_golden text-[117px] font-cormorant">
+        The Key To Fine Dining
+      </h1>
+      <p className="text-color_white mb-9">
+        Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
+        morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
+        tellus
+      </p>
+      <a
+        href="#menu"
+        class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
+      >
+        <span class="w-48 h-48 rounded rotate-[-40deg] bg-color_golden absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+        <span class="font-cormorant relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white text-lg">
+          Explore Menu
+        </span>
+      </a>
+    </div>
   </div>
 );
 

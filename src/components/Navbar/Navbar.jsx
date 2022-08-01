@@ -57,7 +57,8 @@ const Navbar = () => {
       </div>
 
       {isToggle && (
-        <div className="h-screen w-full flex flex-col fixed z-10 bg-color_black top-0 left-0 justify-center items-center ">
+        <div className="h-screen w-full flex flex-col fixed z-10 bg-color_black top-0 
+        left-0 justify-center items-center slide-bottom">
           <MdOutlineRestaurantMenu fontSize={27} className="absolute text-color_golden top-5 right-5 cursor-pointer" onClick={()=>setIsToggle(false)}/>
           <ul className="text-lg space-y-4 font-cormorant text-color_golden">
             <li className="">
