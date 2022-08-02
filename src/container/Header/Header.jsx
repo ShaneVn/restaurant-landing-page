@@ -4,13 +4,13 @@ import { SubHeading } from "../../components";
 
 const Header = () => (
   <div className="app__wrapper section__padding bg-color_black ">
-    <div className="app__wrapper_img pt-12 ">
-      <img src={images.steak} alt="header_image" className="w-[55%] " />
+    <div className="app__wrapper_img pt-12   ">
+      <img src={images.steak} alt="header_image" className=" w-[55%]" />
     </div>
 
-    <div className="app__wrapper_info">
+    <div className="app__wrapper_info pt-12 lg:pt-0">
       <SubHeading title={"Chase The New Flavor"} />
-      <h1 className="text-color_golden text-[117px] font-cormorant">
+      <h1 className="text-color_golden lg:text-[100px] text-[50px] font-cormorant">
         The Key To Fine Dining
       </h1>
       <p className="text-color_white mb-9">
