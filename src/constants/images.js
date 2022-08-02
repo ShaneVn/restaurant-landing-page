@@ -9,7 +9,8 @@ import knife from '../assets/knife.png';
 import logo from '../assets/logo.png';
 import menu from '../assets/menu.png';
 import overlaybg from '../assets/overlaybg.png';
-import spoon from '../assets/spoon.svg';
+import spoon_left from '../assets/spoon-left.png';
+import spoon_right from '../assets/spoon-right.png';
 import welcome from '../assets/welcome.png';
 import findus from '../assets/findus.png';
 import laurels from '../assets/laurels.png';
@@ -35,7 +36,8 @@ export default {
   logo,
   menu,
   overlaybg,
-  spoon,
+  spoon_left,
+  spoon_right,
   welcome,
   findus,
   laurels,

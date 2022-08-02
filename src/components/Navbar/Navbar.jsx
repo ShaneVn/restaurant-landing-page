@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="flex bg-color_black justify-between items-center py-5 lg:px-[100px] px-[50px] text-white fixed w-full z-50 top-0 ">
       <div>
-        <h1 className="text-3xl font-cormorant cursor-pointer text-color_golden font-bold">L’Orphéon</h1>
+        <h1 className="text-4xl font-cormorant cursor-pointer text-color_golden font-bold">L’Orphéon</h1>
       </div>
       <div>
         <ul className="hidden space-x-8 lg:flex font-cormorant text-lg ">
