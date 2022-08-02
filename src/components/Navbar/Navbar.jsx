@@ -9,7 +9,7 @@ const Navbar = () => {
 
   console.log(isToggle);
   return (
-    <div className="flex bg-color_black justify-between items-center py-6 px-[100px] text-white sticky z-50 top-0 ">
+    <div className="flex bg-color_black justify-between items-center py-6 px-[100px] text-white fixed w-full z-50 top-0 ">
       <div>
         <img src={images.gericht} className="w-[150px] cursor-pointer" alt="" />
       </div>

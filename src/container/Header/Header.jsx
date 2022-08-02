@@ -4,7 +4,7 @@ import { SubHeading } from "../../components";
 
 const Header = () => (
   <div className="app__wrapper section__padding bg-color_black ">
-    <div className="app__wrapper_img pb-12 ">
+    <div className="app__wrapper_img pt-12 ">
       <img src={images.steak} alt="header_image" className="w-[55%] " />
     </div>
 
