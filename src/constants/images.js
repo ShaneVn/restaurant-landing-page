@@ -21,9 +21,13 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
-import steak from "../assets/Pan-Seared-Steak-4.jpg"
+import steak from "../assets/Pan-Seared-Steak-4.jpg";
+import menu_dark from "../assets/menu-dark.jpg"
+import restaurant_background from "../assets/restaurant-background.jpg"
 
 export default {
+  restaurant_background,
+  menu_dark,
   steak,
   bg,
   chef,

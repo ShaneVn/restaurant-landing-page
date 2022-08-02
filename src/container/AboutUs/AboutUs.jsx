@@ -1,5 +1,4 @@
 import React from "react";
-import { SubHeading } from "../../components";
 import images from "../../constants/images";
 
 const AboutUs = () => {
@@ -34,7 +33,7 @@ const AboutUs = () => {
       </div>
 
       <div className="z-10 mt-5 mb-4">
-        <img src="https://i.pinimg.com/564x/e6/94/16/e6941696cbf4ea7dbe152b1d7cbd383f.jpg" alt="" className=" rounded-lg" />
+        <img src={images.restaurant_background} alt="" className=" rounded-lg" />
       </div>
 
       <div className="z-10  flex:1 ml-[70px] flex flex-col items-end lg:items-start">
