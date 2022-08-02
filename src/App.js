@@ -5,11 +5,11 @@ import { Navbar } from './components';
 import './App.css';
 
 const App = () => (
-  <div>
+  <div className='h-screen'>
     <Navbar />
     <Header />
-    {/* <AboutUs />
-    <SpecialMenu />
+    <AboutUs />
+    {/*<SpecialMenu />
     <Chef />
     <Intro />
     <Laurels />

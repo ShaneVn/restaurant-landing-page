@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './AboutUs.css';
 
-const AboutUs = () => (
-  <div>
-    AboutUs
-  </div>
-);
+const AboutUs = () => {
+  return (
+    <div className="app__bg flex__center section__padding h-screen"  id="about">
+      <div></div>
+
+      <div></div>
+    </div>
+  );
+};
 
 export default AboutUs;

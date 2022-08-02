@@ -4,8 +4,8 @@ import { SubHeading } from "../../components";
 
 const Header = () => (
   <div className="app__wrapper section__padding bg-color_black ">
-    <div className="app__wrapper_img ">
-      <img src={images.welcome} alt="header_image" className="w-4/5" />
+    <div className="app__wrapper_img pb-12 ">
+      <img src={images.steak} alt="header_image" className="w-[55%] " />
     </div>
 
     <div className="app__wrapper_info">

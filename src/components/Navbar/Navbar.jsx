@@ -1,7 +1,7 @@
 import { useState } from "react";
 import images from "../../constants/images";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdOutlineRestaurantMenu } from 'react-icons/md';
+import { MdOutlineRestaurantMenu } from "react-icons/md";
 
 // <GiHamburgerMenu/>
 const Navbar = () => {
@@ -9,12 +9,12 @@ const Navbar = () => {
 
   console.log(isToggle);
   return (
-    <div className="flex bg-color_black justify-between items-center py-6 px-[100px] text-white">
+    <div className="flex bg-color_black justify-between items-center py-6 px-[100px] text-white sticky z-50 top-0 ">
       <div>
-        <img src={images.gericht} className="w-[150px]" alt="" />
+        <img src={images.gericht} className="w-[150px] cursor-pointer" alt="" />
       </div>
       <div>
-        <ul className="hidden space-x-8 lg:flex">
+        <ul className="hidden space-x-8 lg:flex font-cormorant text-lg ">
           <li className="">
             <a className="nav-hover" href="#home">
               Home
@@ -42,7 +42,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="hidden space-x-8 sm:flex items-center">
+      <div className="hidden space-x-8 sm:flex items-center font-cormorant">
         <a className="nav-hover" href="">
           Login / Register
         </a>
@@ -57,9 +57,15 @@ const Navbar = () => {
       </div>
 
       {isToggle && (
-        <div className="h-screen w-full flex flex-col fixed z-10 bg-color_black top-0 
-        left-0 justify-center items-center slide-bottom">
-          <MdOutlineRestaurantMenu fontSize={27} className="absolute text-color_golden top-5 right-5 cursor-pointer" onClick={()=>setIsToggle(false)}/>
+        <div
+          className="h-screen w-full flex flex-col fixed z-10 bg-color_black top-0 
+        left-0 justify-center items-center slide-bottom"
+        >
+          <MdOutlineRestaurantMenu
+            fontSize={27}
+            className="absolute text-color_golden top-5 right-5 cursor-pointer"
+            onClick={() => setIsToggle(false)}
+          />
           <ul className="text-lg space-y-4 font-cormorant text-color_golden">
             <li className="">
               <a className="nav-hover" href="#home">
