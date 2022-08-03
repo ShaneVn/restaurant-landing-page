@@ -11,8 +11,8 @@ const AboutUs = () => {
         <img src={images.G} alt="G" className="w-[391px] h-[415px]" />
       </div> */}
 
-      <div className="z-10 flex flex-col lg:items-end mr-[80px] flex:1 items-start mb-5">
-        <h1 className="text-color_golden font-cormorant lg:text-[80px] text-[50px] lg:self-end">
+      <div className="z-10 flex flex-col lg:items-end mr-[80px] flex-1 items-start mb-5 lg:self-start">
+        <h1 className="text-color_golden font-cormorant lg:text-[80px] text-[50px]">
           About Us
         </h1>
         <img src={images.spoon_left} alt="spoon" className="mb-5" />
@@ -32,19 +32,24 @@ const AboutUs = () => {
         </a>
       </div>
 
-      <div className="z-10 mt-5 mb-4">
-        <img src={images.restaurant_background} alt="" className=" rounded-lg" />
+      <div className="z-10 mt-5 mb-4 w-[95%] lg:w-[475px]">
+        <img
+          src={images.restaurant_background}
+          alt=""
+          className=" rounded-lg"
+        />
       </div>
 
-      <div className="z-10  flex:1 ml-[70px] flex flex-col items-end lg:items-start">
+      <div className="z-10  flex-1 ml-[70px] flex flex-col items-end lg:items-start lg:self-end">
         <h1 className="text-color_golden font-cormorant lg:text-[80px] text-[50px] ">
           Our History
         </h1>
         <img src={images.spoon_right} alt="spoon" className="mb-5" />
         <p className="text-color_grey font-openSans mb-10 lg:text-start text-end">
-          {" "}
-          Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-          volutpat morbi facilisis tellu
+        Lorem ipsum dolor sit amet, consectetur adipiscing 
+        elit, sed do eiusmod tempor incididunt ut labore et 
+        dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
         </p>
         <a
           href="#_"
