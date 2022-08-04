@@ -26,21 +26,25 @@ const Header = () => {
         <img
           src={images.steak}
           alt="header_image"
-          className=" 2xl:w-[55%] rounded-lg lg:w-[70%] "
+          className=" 2xl:w-[60%] rounded-lg lg:w-[70%] lg:mr-6"
         />
       </div>
 
-      <div className="app__wrapper_info pt-12 lg:pt-0 relative">
-        <div class="md:w-[80%] space-y-7">
+      <div className="app__wrapper_info pt-12 lg:pt-0 relative ">
+        <div class="space-y-7 ">
           <SubHeading title={"Chase The New Flavor"} />
+          <div className="lg:w-[70%]">
           <h1 className="text-color_golden lg:text-[80px] text-[50px] font-cormorant">
             The Key To Fine Dining
           </h1>
-          <p className="text-color_white mb-9">
-            Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-            volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
-            aliquam amet tellus
+          </div>
+          <div className="">
+          <p className="text-color_white mb-9 font-openSans ">
+          Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus
+
+
           </p>
+          </div>
           <a
             href="#menu"
             class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
@@ -53,7 +57,7 @@ const Header = () => {
             ></span>
             <span
               class="font-cormorant relative w-full text-left text-black 
-        transition-colors duration-300 ease-in-out group-hover:text-white text-lg"
+        transition-colors duration-300 ease-in-out group-hover:text-white text-lg font-bold"
             >
               Explore Menu
             </span>

@@ -66,7 +66,7 @@ const Navbar = () => {
             className="absolute text-color_golden top-5 right-5 cursor-pointer"
             onClick={() => setIsToggle(false)}
           />
-          <ul className="text-lg space-y-4 font-cormorant text-color_golden">
+          <ul className="text-xl space-y-4 font-cormorant text-color_golden">
             <li className="">
               <a className="nav-hover" href="#home">
                 Home
