@@ -1,18 +1,23 @@
-import React from "react";
+import { useState } from "react";
 import images from "../../constants/images";
 import { SubHeading } from "../../components";
 import Lottie, { useLottie } from "lottie-react";
 import animation from "../../lottie/ballon.json";
+import { Waypoint } from "react-waypoint";
+import { render } from "@testing-library/react";
 
 const Header = () => {
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: true,
     animationData: animation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+  let [renderLottie, setRenderLottie] = useState(false);
+
+  console.log(renderLottie);
 
   const { View } = useLottie(defaultOptions);
   return (
@@ -54,7 +59,11 @@ const Header = () => {
             </span>
           </a>
 
-          <div className="hidden xl:flex absolute top-1 right-5">{View}</div>
+          <div className="hidden xl:flex absolute top-1 right-5">
+            {/* <Waypoint onEnter={()=>setRenderLottie(true)}/> */}
+            {/* <Waypoint onLeave={()=>setRenderLottie(false)}/> */}
+            {View}
+          </div>
         </div>
       </div>
     </div>
