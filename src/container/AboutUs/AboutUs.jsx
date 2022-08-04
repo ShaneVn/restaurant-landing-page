@@ -1,6 +1,6 @@
 import React from "react";
 import images from "../../constants/images";
-import Lottie, { useLottie } from "lottie-react"
+import Lottie, { useLottie } from "lottie-react";
 import animation from "../../lottie/mobile.json";
 
 const AboutUs = () => {
@@ -13,18 +13,17 @@ const AboutUs = () => {
     },
   };
 
-
-  const { View } = useLottie(defaultOptions)
+  const { View } = useLottie(defaultOptions);
   return (
     <div
-      className="app__bg flex flex-col 2xl:flex-row items-center justify-center section__padding 2xl:h-screen"
+      className="app__bg flex flex-col xl:flex-row items-center justify-center section__padding 2xl:h-screen"
       id="about"
     >
       {/* <div className="absolute  flex__center z-0">
         <img src={images.G} alt="G" className="w-[391px] h-[415px]" />
       </div> */}
 
-      <div className="z-10 flex flex-col lg:items-end mr-[80px] flex-1 items-start mb-5 lg:self-start">
+      <div className="z-10 flex flex-col lg:items-end mr-[80px] flex-1 items-start mb-5 lg:self-start lg:ml-auto">
         <h1 className="text-color_golden font-cormorant lg:text-[80px] text-[50px]">
           About Us
         </h1>
@@ -44,10 +43,10 @@ const AboutUs = () => {
           </span>
         </a>
 
-       <div className="hidden 2xl:flex"> {View}   </div>
+        <div className="hidden xl:flex"> {View} </div>
       </div>
 
-      <div className="z-10 mt-5 mb-4 w-[95%] lg:w-[475px]">
+      <div className="z-10 mt-5 mb-4  lg:w-[475px]">
         <img
           src={images.restaurant_background}
           alt=""
