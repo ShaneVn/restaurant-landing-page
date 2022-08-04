@@ -1,18 +1,20 @@
 import React from "react";
 import images from "../../constants/images";
-import Lottie from "lottie-web";
-import mobileAnimation from "../../lottie/mobile.json"
+import Lottie, { useLottie } from "lottie-react"
+import animation from "../../lottie/mobile.json";
 
 const AboutUs = () => {
-
   const defaultOptions = {
     loop: true,
-    autoplay: true, 
-    animationData: mobileAnimation,
+    autoplay: true,
+    animationData: animation,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
+      preserveAspectRatio: "xMidYMid slice",
+    },
   };
+
+
+  const { View } = useLottie(defaultOptions)
   return (
     <div
       className="app__bg flex flex-col 2xl:flex-row items-center justify-center section__padding 2xl:h-screen"
@@ -42,13 +44,8 @@ const AboutUs = () => {
           </span>
         </a>
 
-        <Lottie options={defaultOptions}
-              height={400}
-              width={400} />
-        
+       <div className="hidden 2xl:flex"> {View}   </div>
       </div>
-
-     
 
       <div className="z-10 mt-5 mb-4 w-[95%] lg:w-[475px]">
         <img
@@ -64,10 +61,10 @@ const AboutUs = () => {
         </h1>
         <img src={images.spoon_right} alt="spoon" className="mb-5" />
         <p className="text-color_grey font-openSans mb-10 lg:text-start text-end">
-        Lorem ipsum dolor sit amet, consectetur adipiscing 
-        elit, sed do eiusmod tempor incididunt ut labore et 
-        dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat
         </p>
         <a
           href="#_"
