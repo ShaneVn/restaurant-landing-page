@@ -1,7 +1,18 @@
 import React from "react";
 import images from "../../constants/images";
+import Lottie from "lottie-web";
+import mobileAnimation from "../../lottie/mobile.json"
 
 const AboutUs = () => {
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: mobileAnimation,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
   return (
     <div
       className="app__bg flex flex-col 2xl:flex-row items-center justify-center section__padding 2xl:h-screen"
@@ -30,7 +41,14 @@ const AboutUs = () => {
             Know More
           </span>
         </a>
+
+        <Lottie options={defaultOptions}
+              height={400}
+              width={400} />
+        
       </div>
+
+     
 
       <div className="z-10 mt-5 mb-4 w-[95%] lg:w-[475px]">
         <img
