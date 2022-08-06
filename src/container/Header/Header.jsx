@@ -21,16 +21,16 @@ const Header = () => {
     <div className="app__wrapper section__padding bg-color_black" id="home">
       <Waypoint onEnter={() => setRenderLottie(true)} />
       <Waypoint onLeave={() => setRenderLottie(false)} />
-      <div className="app__wrapper_img lg:pt-12   ">
+      <div className="app__wrapper_img lg:pt-12 mr-[200px]   ">
         <img
-          src={images.steak}
+          src={images.dinner}
           alt="header_image"
-          className=" 2xl:w-[60%] rounded-lg lg:w-[70%]"
+          className="  rounded-lg  "
         />
       </div>
 
       <div className="app__wrapper_info pt-12 lg:pt-0 relative ">
-        <div class="space-y-7 ">
+        <div class="space-y-7  ">
           <SubHeading title={"Chase The New Flavor"} />
           <div className="lg:w-[70%]">
             <h1 className="section-title">The Key To Fine Dining</h1>

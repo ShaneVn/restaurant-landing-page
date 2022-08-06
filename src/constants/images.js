@@ -25,8 +25,10 @@ import steak from "../assets/Pan-Seared-Steak-4.jpg";
 import menu_dark from "../assets/menu-dark.jpg"
 import restaurant_background from "../assets/restaurant-background.jpg"
 import cocktail from "../assets/cocktail.jpg"
+import dinner from "../assets/dinner.jpg"
 
 export default {
+  dinner,
   cocktail,
   restaurant_background,
   menu_dark,
