@@ -1,27 +1,26 @@
 import { useState } from "react";
 import images from "../../constants/images";
 import { SubHeading } from "../../components";
-import Lottie, { useLottie } from "lottie-react";
+import { useLottie } from "lottie-react";
 import animation from "../../lottie/ballon.json";
 import { Waypoint } from "react-waypoint";
-import { render } from "@testing-library/react";
+import Lottie from "lottie-react";
 
 const Header = () => {
-  const defaultOptions = {
-    loop: false,
-    autoplay: true,
-    animationData: animation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-  let [renderLottie, setRenderLottie] = useState(false);
+  // const defaultOptions = {
+  //   loop: 1,
+  //   autoplay: true,
+  //   animationData: animation,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
+  let [renderLottie, setRenderLottie] = useState(true);
 
-  console.log(renderLottie);
-
-  const { View } = useLottie(defaultOptions);
   return (
     <div className="app__wrapper section__padding bg-color_black" id="home">
+      <Waypoint onEnter={() => setRenderLottie(true)} />
+      <Waypoint onLeave={() => setRenderLottie(false)} />
       <div className="app__wrapper_img lg:pt-12   ">
         <img
           src={images.steak}
@@ -34,16 +33,14 @@ const Header = () => {
         <div class="space-y-7 ">
           <SubHeading title={"Chase The New Flavor"} />
           <div className="lg:w-[70%]">
-          <h1 className="section-title">
-            The Key To Fine Dining
-          </h1>
+            <h1 className="section-title">The Key To Fine Dining</h1>
           </div>
           <div className="">
-          <p className="text-color_white mb-9 font-openSans leading-8">
-          Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus
-
-
-          </p>
+            <p className="text-color_white mb-9 font-openSans leading-8">
+              Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+              volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+              aliquam amet tellus
+            </p>
           </div>
           <a
             href="#menu"
@@ -62,12 +59,11 @@ const Header = () => {
               Explore Menu
             </span>
           </a>
-
-          <div className="hidden xl:flex absolute top-1 right-5">
-            {/* <Waypoint onEnter={()=>setRenderLottie(true)}/> */}
-            {/* <Waypoint onLeave={()=>setRenderLottie(false)}/> */}
-            {View}
-          </div>
+          {renderLottie && (
+            <div className="hidden lg:flex absolute top-1 right-5">
+              <Lottie animationData={animation} loop={1} />
+            </div>
+          )}
         </div>
       </div>
     </div>
