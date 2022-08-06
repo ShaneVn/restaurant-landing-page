@@ -3,6 +3,7 @@ import { MenuItem, SubHeading } from "../../components";
 import images from "../../constants/images";
 import { data } from "../../constants";
 
+
 const SpecialMenu = () => {
   return (
     <div
@@ -11,7 +12,7 @@ const SpecialMenu = () => {
     >
       <div className="flex flex-col items-center justify-center text-center ">
         <SubHeading title="Menu That Fits Your Palette" imageCenter={true} />
-        <h1 className="font-cormorant lg:text-[70px] text-[50px] text-color_golden ">
+        <h1 className="section-title ">
           Today's Special
         </h1>
       </div>
@@ -31,9 +32,8 @@ const SpecialMenu = () => {
         </div>
         <div>
           <img
-            src="https://thumbs.dreamstime.com/b/fr
-            esh-tropical-cocktail-pineapple-ice-jar-glass-dark-blue-background-studio-shot-drink-freeze-motion-flying-171168493.jpg"
-            alt=""
+            src={images.cocktail}
+            alt="cocktails"
             className="rounded-lg w-[410px] h-auto"
           />
         </div>

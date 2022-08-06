@@ -1,3 +1,4 @@
+
 .section__padding {
   padding: 4rem 10rem;
 }
@@ -40,7 +41,6 @@
   justify-content: center;
   align-items: center;
 
-  margin-left: 2rem;
 }
 
 .app__wrapper_img-reverse {

@@ -1,11 +1,34 @@
-import React from 'react';
+import React from "react";
+import { images } from "../../constants";
+import { SubHeading } from "../../components";
 
-import './Chef.css';
+import "./Chef.css";
 
-const Chef = () => (
-  <div>
-    Chef
-  </div>
-);
-
+const Chef = () => {
+  return (
+    <div className="app__bg app__wrapper section__padding ">
+      <div className="app__wrapper_img mr-[200px]">
+        <img src={images.chef} alt="chef" />
+      </div>
+      <div className="flex-1 ">
+        <SubHeading title="Chef's Word" />
+        <h1 className="section-title mb-12">What we Believe in </h1>
+        <div className="flex items-end justify-start">
+          <img
+            className="w-[47px] h-[40px] mr-3 mb-1"
+            src={images.quote}
+            alt=""
+          />
+          <p className="leading-8 font-openSans text-color_grey ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit
+          </p>
+        </div>
+        <p className="leading-8 font-openSans text-color_grey">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit
+        </p>
+      </div>
+    </div>
+  );
+};
 export default Chef;

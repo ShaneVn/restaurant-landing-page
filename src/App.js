@@ -1,17 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
-import { Navbar } from './components';
-import './App.css';
+import {
+  AboutUs,
+  Chef,
+  FindUs,
+  Footer,
+  Gallery,
+  Header,
+  Intro,
+  Laurels,
+  SpecialMenu,
+} from "./container";
+import { Navbar } from "./components";
+import "./App.css";
 
 const App = () => (
-  <div className='h-screen'>
+  <div className="h-screen">
     <Navbar />
     <Header />
     <AboutUs />
     <SpecialMenu />
-    {/* <Chef />
-    <Intro />
+    <Chef />
+    {/*<Intro />
     <Laurels />
     <Gallery />
     <FindUs />

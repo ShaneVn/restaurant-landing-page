@@ -24,11 +24,11 @@ const AboutUs = () => {
       </div> */}
 
       <div className="z-10 flex flex-col lg:items-end mr-[80px] flex-1 items-start mb-5 lg:self-start lg:ml-auto">
-        <h1 className="text-color_golden font-cormorant lg:text-[80px] text-[50px]">
+        <h1 className="section-title">
           About Us
         </h1>
         <img src={images.spoon_left} alt="spoon" className="mb-5" />
-        <p className="text-color_grey lg:text-end mb-10 font-openSans ">
+        <p className="text-color_grey lg:text-end mb-10 font-openSans leading-8 ">
           {" "}
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum
           volutpat morbi facilisis tellu
@@ -55,11 +55,11 @@ const AboutUs = () => {
       </div>
 
       <div className="z-10  flex-1 ml-[70px] flex flex-col items-end lg:items-start lg:self-end">
-        <h1 className="text-color_golden font-cormorant lg:text-[80px] text-[50px] ">
+        <h1 className="section-title ">
           Our History
         </h1>
         <img src={images.spoon_right} alt="spoon" className="mb-5" />
-        <p className="text-color_grey font-openSans mb-10 lg:text-start text-end">
+        <p className="text-color_grey font-openSans mb-10 lg:text-start text-end leading-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

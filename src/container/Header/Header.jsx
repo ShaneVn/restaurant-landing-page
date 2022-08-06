@@ -26,7 +26,7 @@ const Header = () => {
         <img
           src={images.steak}
           alt="header_image"
-          className=" 2xl:w-[60%] rounded-lg lg:w-[70%] lg:mr-6"
+          className=" 2xl:w-[60%] rounded-lg lg:w-[70%]"
         />
       </div>
 
@@ -34,12 +34,12 @@ const Header = () => {
         <div class="space-y-7 ">
           <SubHeading title={"Chase The New Flavor"} />
           <div className="lg:w-[70%]">
-          <h1 className="text-color_golden lg:text-[80px] text-[50px] font-cormorant">
+          <h1 className="section-title">
             The Key To Fine Dining
           </h1>
           </div>
           <div className="">
-          <p className="text-color_white mb-9 font-openSans ">
+          <p className="text-color_white mb-9 font-openSans leading-8">
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus
 
 

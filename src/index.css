@@ -11,6 +11,15 @@
 }
 
 
+@layer components{
+  .section-title{
+    @apply font-cormorant lg:text-[70px] text-[50px] text-color_golden 
+  }
+}
+
+
+
+
 
 :root {
   --font-base: 'Cormorant Upright', serif;
