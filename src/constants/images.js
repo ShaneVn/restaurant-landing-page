@@ -26,8 +26,12 @@ import menu_dark from "../assets/menu-dark.jpg"
 import restaurant_background from "../assets/restaurant-background.jpg"
 import cocktail from "../assets/cocktail.jpg"
 import dinner from "../assets/dinner.jpg"
+import drink from "../assets/drink.webp"
+import about from "../assets/about-us.jpg"
 
 export default {
+  about,
+  drink,
   dinner,
   cocktail,
   restaurant_background,

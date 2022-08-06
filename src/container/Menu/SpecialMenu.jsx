@@ -3,7 +3,6 @@ import { MenuItem, SubHeading } from "../../components";
 import images from "../../constants/images";
 import { data } from "../../constants";
 
-
 const SpecialMenu = () => {
   return (
     <div
@@ -12,9 +11,7 @@ const SpecialMenu = () => {
     >
       <div className="flex flex-col items-center justify-center text-center ">
         <SubHeading title="Menu That Fits Your Palette" imageCenter={true} />
-        <h1 className="section-title ">
-          Today's Special
-        </h1>
+        <h1 className="section-title ">Today's Special</h1>
       </div>
       <div className="flex flex-col xl:flex-row items-center justify-center space-x-10 w-full   ">
         <div className=" flex flex-col items-center flex-1 w-full ">
@@ -32,7 +29,7 @@ const SpecialMenu = () => {
         </div>
         <div>
           <img
-            src={images.cocktail}
+            src="https://www.kitchensanctuary.com/wp-content/uploads/2016/08/Pineapple-and-Ginger-Mojitos-tall-3.jpg"
             alt="cocktails"
             className="rounded-lg w-[410px] h-auto"
           />
