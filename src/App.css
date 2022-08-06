@@ -26,7 +26,14 @@
 
 @media screen and (max-width: 1280px) {
   .app__header {
-    background-position: bottom 0 right 20%;
+    background-position: bottom 0% right 20%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .app__header {
+    background-position: bottom 10% right 20%;
   }
 }
 
