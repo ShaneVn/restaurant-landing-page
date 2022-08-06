@@ -18,7 +18,7 @@ const Header = () => {
   let [renderLottie, setRenderLottie] = useState(true);
 
   return (
-    <div className="bg-black h-[80%] sm:h-screen">
+    <div className="bg-black ">
     <div className="flex items-center justify-between h-screen  section__padding app__header app__header bg-left" id="home">
       {/* <Waypoint onEnter={() => setRenderLottie(true)} />
       <Waypoint onLeave={() => setRenderLottie(false)} /> */}
@@ -30,7 +30,7 @@ const Header = () => {
         />
       </div> */}
 
-      <div className="app__wrapper_info relative mt-[-120px] sm:mt-0   ">
+      <div className="app__wrapper_info relative  ">
         <div class="space-y-7  ">
           <SubHeading title={"Chase The New Flavor"} />
           <div className="lg:w-[70%]">

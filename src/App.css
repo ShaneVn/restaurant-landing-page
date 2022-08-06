@@ -1,4 +1,3 @@
-
 .section__padding {
   padding: 4rem 10rem;
 }
@@ -10,7 +9,7 @@
 }
 
 .app__bg {
-  background: url('./assets/bg.png');
+  background: url("./assets/bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
@@ -18,7 +17,7 @@
 }
 
 .app__header {
-  background: url('./assets/wine.jpg');
+  background: url("./assets/wine.jpg");
   background-position: top 50px right 40%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -31,15 +30,11 @@
   }
 }
 
-@media screen and (max-width: 652px) {
+/* @media screen and (max-width: 652px) {
   .app__header {
-    background-position: bottom 30% right 20%;
+    background-position: bottom 0 right 20%;
   }
-}
-
-
-
-
+} */
 
 .app__wrapper {
   display: flex;
@@ -64,7 +59,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .app__wrapper_img-reverse {
@@ -78,17 +72,17 @@
 
 .custom__button {
   background-color: var(--color-crimson);
-    color: var(--color-black);
-    font-family: var(--font-base);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 28px;
-    font-size: 16px;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1px;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .p__cormorant {
@@ -97,7 +91,7 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  font-feature-settings: 'tnum' on, 'lnum' on;
+  font-feature-settings: "tnum" on, "lnum" on;
   line-height: 29.9px;
   font-size: 23px;
 }
@@ -175,7 +169,7 @@
   .section__padding {
     padding: 4rem 2rem;
   }
-  
+
   .p__cormorant {
     font-size: 21px;
   }
