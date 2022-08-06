@@ -17,6 +17,30 @@
   background-attachment: fixed;
 }
 
+.app__header {
+  background: url('./assets/wine.jpg');
+  background-position: top 50px right 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 1280px) {
+  .app__header {
+    background-position: bottom 0 right 20%;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .app__header {
+    background-position: bottom 30% right 20%;
+  }
+}
+
+
+
+
+
 .app__wrapper {
   display: flex;
   justify-content: space-between;

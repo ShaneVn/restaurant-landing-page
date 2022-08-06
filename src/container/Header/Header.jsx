@@ -18,24 +18,25 @@ const Header = () => {
   let [renderLottie, setRenderLottie] = useState(true);
 
   return (
-    <div className="app__wrapper section__padding bg-color_black" id="home">
-      <Waypoint onEnter={() => setRenderLottie(true)} />
-      <Waypoint onLeave={() => setRenderLottie(false)} />
-      <div className="app__wrapper_img lg:pt-12 mr-[200px]   ">
+    <div className="bg-black h-[80%] sm:h-screen">
+    <div className="flex items-center justify-between h-screen  section__padding app__header app__header bg-left" id="home">
+      {/* <Waypoint onEnter={() => setRenderLottie(true)} />
+      <Waypoint onLeave={() => setRenderLottie(false)} /> */}
+      {/* <div className="app__wrapper_img lg:pt-12 mr-[200px]  ">
         <img
           src={images.dinner}
           alt="header_image"
           className="  rounded-lg  "
         />
-      </div>
+      </div> */}
 
-      <div className="app__wrapper_info pt-12 lg:pt-0 relative ">
+      <div className="app__wrapper_info relative mt-[-120px] sm:mt-0   ">
         <div class="space-y-7  ">
           <SubHeading title={"Chase The New Flavor"} />
           <div className="lg:w-[70%]">
             <h1 className="section-title">The Key To Fine Dining</h1>
           </div>
-          <div className="">
+          <div className="lg:w-[70%]">
             <p className="text-color_white mb-9 font-openSans leading-8">
               Sit tellus lobortis sed senectus vivamus molestie. Condimentum
               volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
@@ -59,13 +60,14 @@ const Header = () => {
               Explore Menu
             </span>
           </a>
-          {renderLottie && (
+          {/* {renderLottie && (
             <div className="hidden lg:flex absolute top-1 right-5">
               <Lottie animationData={animation} loop={1} />
             </div>
-          )}
+          )} */}
         </div>
       </div>
+    </div>
     </div>
   );
 };
