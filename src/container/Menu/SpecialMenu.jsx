@@ -27,7 +27,7 @@ const SpecialMenu = () => {
             />
           ))}
         </div>
-        <div>
+        <div class="hover_image cursor-pointer">
           <img
             src="https://www.kitchensanctuary.com/wp-content/uploads/2016/08/Pineapple-and-Ginger-Mojitos-tall-3.jpg"
             alt="cocktails"

@@ -2,12 +2,11 @@ import React from "react";
 import { images } from "../../constants";
 import { SubHeading } from "../../components";
 
-import "./Chef.css";
 
 const Chef = () => {
   return (
     <div className="app__bg app__wrapper section__padding" id="chef">
-      <div className="app__wrapper_img mr-[200px]">
+      <div className="app__wrapper_img mr-[200px] cursor-pointer hover_image">
         <img src={images.chef} alt="chef" />
       </div>
       <div className="flex-1 mt-10 lg:mt-0 ">

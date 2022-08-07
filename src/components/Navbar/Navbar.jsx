@@ -9,7 +9,8 @@ const Navbar = () => {
 
   console.log(isToggle);
   return (
-    <div className="flex bg-color_black justify-between items-center py-5 lg:px-[100px] px-[50px] text-white fixed w-full z-50 top-0 ">
+    <div className="flex bg-color_black justify-between items-center py-5 lg:px-[100px] px-[50px] text-white fixed w-full z-50 top-0" 
+    data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out">
       <div>
       <a href="#home">  <h1 className="text-4xl font-cormorant cursor-pointer text-color_golden font-bold">L’Orphéon</h1> </a>
       </div>
