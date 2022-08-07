@@ -9,12 +9,22 @@ const SpecialMenu = () => {
       className=" flex flex-col items-center bg-color_black section__padding  "
       id="menu"
     >
-      <div className="flex flex-col items-center justify-center text-center ">
+      {/* top part */}
+      <div className="flex flex-col items-center justify-center text-center">
         <SubHeading title="Menu That Fits Your Palette" imageCenter={true} />
         <h1 className="section-title ">Today's Special</h1>
       </div>
+
+      {/* middle part*/}
       <div className="flex flex-col xl:flex-row items-center justify-center space-x-10 w-full   ">
-        <div className=" flex flex-col items-center flex-1 w-full ">
+        {/* left side text */}
+        <div
+          className=" flex flex-col items-center flex-1 w-full "
+          data-aos="flip-left"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+        >
           <h1 className="text-color_white font-cormorant text-[40px] mb-10">
             Wine & Beer
           </h1>
@@ -27,7 +37,9 @@ const SpecialMenu = () => {
             />
           ))}
         </div>
-        <div class="hover_image cursor-pointer">
+
+        {/* middle imgage */}
+        <div class="">
           <img
             src="https://www.kitchensanctuary.com/wp-content/uploads/2016/08/Pineapple-and-Ginger-Mojitos-tall-3.jpg"
             alt="cocktails"
@@ -35,7 +47,14 @@ const SpecialMenu = () => {
           />
         </div>
 
-        <div className=" flex flex-col items-center flex-1 w-full">
+        {/* right part text */}
+        <div
+          className=" flex flex-col items-center flex-1 w-full"
+          data-aos="flip-right"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+        >
           <h1 className="text-color_white font-cormorant text-[40px] mb-10">
             Cocktails
           </h1>

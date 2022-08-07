@@ -33,10 +33,14 @@ const Header = () => {
         />
       </div> */}
 
-
-   {/* block of text here */}
-        <div className="app__wrapper_info relative"  
-        data-aos="fade-right"  data-aos-duration="1200" data-aos-easing="ease-in-out"  data-aos-mirror="true">
+        {/* block of text here */}
+        <div
+          className="app__wrapper_info relative"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+        >
           <div class="space-y-7  ">
             <SubHeading title={"Chase The New Flavor"} />
             <div className="lg:w-[70%]">

@@ -2,13 +2,20 @@ import React from "react";
 import { images } from "../../constants";
 import { SubHeading } from "../../components";
 
-
 const Chef = () => {
   return (
     <div className="app__bg app__wrapper section__padding" id="chef">
-      <div className="app__wrapper_img mr-[200px] cursor-pointer hover_image">
+      {/* left image */}
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        className="app__wrapper_img mr-[200px]"
+      >
         <img src={images.chef} alt="chef" />
       </div>
+      {/* right text */}
       <div className="flex-1 mt-10 lg:mt-0 ">
         <SubHeading title="Chef's Word" />
         <h1 className="section-title mb-12">What we Believe in </h1>
@@ -30,11 +37,10 @@ const Chef = () => {
           culpa qui officia deserunt mollit anim id est laborum
         </p>
 
-        
-          <p className="font-cormorant text-color_golden text-[30px] font-light mb-2 ">
-            Kevin Luo
-          </p>
-          <p className="font-openSans text-color_grey">Chef & Founder</p>
+        <p className="font-cormorant text-color_golden text-[30px] font-light mb-2 ">
+          Kevin Luo
+        </p>
+        <p className="font-openSans text-color_grey">Chef & Founder</p>
         <img src={images.sign} alt="sign" className="w-[200px] mt-12" />
       </div>
     </div>
