@@ -24,7 +24,7 @@ const AboutUs = () => {
       </div> */}
 
       <div className="z-10 flex flex-col lg:items-end mr-[80px] flex-1 items-start mb-5 lg:self-start 
-      lg:ml-auto"  data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out" >
+      lg:ml-auto"  data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true" >
         <h1 className="section-title">
           About Us
         </h1>
@@ -55,7 +55,7 @@ const AboutUs = () => {
         />
       </div>
 
-      <div className="z-10  flex-1 ml-[70px] flex flex-col items-end lg:items-start lg:self-end" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+      <div className="z-10  flex-1 ml-[70px] flex flex-col items-end lg:items-start lg:self-end" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="true">
         <h1 className="section-title ">
           Our History
         </h1>
