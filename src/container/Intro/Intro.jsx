@@ -19,7 +19,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="h-[50%] relative group">
+    <div className="h-[50%] relative group ">
       <video
         src={meal}
         type="video/mp4"
@@ -31,8 +31,8 @@ const Intro = () => {
       />
 
       <div
-        className="absolute inset-0 hidden group-hover:flex justify-center
-         items-center cursor-pointer 
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 flex justify-center
+         items-center duration-[1200ms] ease-in-out cursor-pointer
           "
         onClick={vidButton}
       >
