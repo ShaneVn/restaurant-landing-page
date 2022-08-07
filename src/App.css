@@ -196,3 +196,8 @@
     line-height: 70px;
   }
 }
+
+
+@media (max-width: 767px){
+  html {overflow-x: hidden;}
+}

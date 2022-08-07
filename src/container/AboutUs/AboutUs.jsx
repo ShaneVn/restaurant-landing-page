@@ -23,6 +23,8 @@ const AboutUs = () => {
         <img src={images.G} alt="G" className="w-[391px] h-[415px]" />
       </div> */}
 
+
+{/* left part text */}
       <div
         className="z-10 flex flex-col lg:items-end mr-[80px] flex-1 items-start mb-5 lg:self-start 
       lg:ml-auto"
