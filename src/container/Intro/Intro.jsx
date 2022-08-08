@@ -26,7 +26,7 @@ const Intro = () => {
         autoPlay
         muted
         loop
-        className="object-cover h-full w-full"
+        className="object-cover h-full w-screen"
         ref={vidRef}
       />
 
