@@ -48,6 +48,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  -webkit-overflow-scrolling: auto
+}
+
 a {
   color: unset;
   text-decoration: none;
@@ -79,7 +83,6 @@ a {
             transform: translateY(0);
   }
 }
-
 
 
 
