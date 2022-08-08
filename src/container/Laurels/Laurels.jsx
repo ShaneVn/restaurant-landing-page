@@ -3,8 +3,8 @@ import React from 'react';
 import './Laurels.css';
 
 const Laurels = () => (
-  <div>
-    Laurels
+  <div className='app__bg h-screen'>
+    
   </div>
 );
 

@@ -5,7 +5,7 @@ import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
 import "./Intro.css";
 
 const Intro = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const vidRef = useRef();
 
   const vidButton = () => {
@@ -19,11 +19,10 @@ const Intro = () => {
   };
 
   return (
-    <div className="h-[50%] relative group ">
+    <div className="hidden md:flex h-[60%] relative group bg-color_black ">
       <video
         src={meal}
         type="video/mp4"
-        autoPlay
         muted
         loop
         className="object-cover h-full w-screen"
