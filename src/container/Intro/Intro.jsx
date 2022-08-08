@@ -19,7 +19,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="hidden md:flex h-[60%] relative group bg-color_black ">
+    <div className="hidden md:flex  relative group bg-color_black ">
       <video
         src={meal}
         type="video/mp4"
