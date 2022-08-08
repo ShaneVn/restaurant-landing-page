@@ -11,7 +11,7 @@ const Chef = () => {
         data-aos-duration="1200"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        className="app__wrapper_img mr-[200px]"
+        className="app__wrapper_img lg:mr-[200px]"
       >
         <img src={images.chef} alt="chef" />
       </div>
@@ -21,7 +21,7 @@ const Chef = () => {
         <h1 className="section-title mb-12">What we Believe in </h1>
         <div className="flex items-end justify-start ">
           <img
-            className="w-[47px] h-[40px] mr-3 mb-1"
+            className="w-[47px] h-[40px] lg:mr-3 mb-1"
             src={images.quote}
             alt=""
           />

@@ -48,9 +48,9 @@
   scroll-behavior: smooth;
 }
 
-body{
+/* body{
   -webkit-overflow-scrolling: auto
-}
+} */
 
 a {
   color: unset;

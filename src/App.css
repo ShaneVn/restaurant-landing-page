@@ -30,9 +30,6 @@
   }
 }
 
-
-
-
 /* @media screen and (max-width: 652px) {
   .app__header {
     background-position: bottom 0 right 20%;
@@ -197,7 +194,10 @@
   }
 }
 
-
-@media (max-width: 767px){
-  html {overflow-x: hidden;}
-}
+/* @media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+} */

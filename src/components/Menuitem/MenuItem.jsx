@@ -4,7 +4,7 @@ const MenuItem = ({ title, price, tags }) => {
   return (
     <div className="flex flex-col mb-12  w-full ">
       <div className="flex items-center justify-between space-x-5 mb-2  ">
-        <p className="text-color_golden font-cormorant text-2xl mr-10 font-bold flex-1  ">
+        <p className="text-color_golden font-cormorant text-2xl lg:mr-10 font-bold flex-1  ">
           {title}
         </p>
 
