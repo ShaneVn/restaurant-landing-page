@@ -18,7 +18,7 @@ const Awards = ({ award: { imgUrl, title, subtitle } }) => {
 };
 
 const Laurels = () => (
-  <div className="app__bg 3xl:h-[80%] flex flex-col lg:flex-row  justify-between items-center section__padding" id="awards">
+  <div className="app__bg 3xl:h-[80%] flex flex-col xl:flex-row  justify-between items-center section__padding" id="awards">
     {/* left side text  */}
     <div className=" flex  flex-col flex-1  ">
       <SubHeading title={"Award & Recogonition"} />

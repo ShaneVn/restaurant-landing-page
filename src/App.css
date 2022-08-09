@@ -148,18 +148,27 @@
   }
 }
 
-@media screen and (max-width: 1150px) {
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: white !important;
+}
+
+
+
+@media screen and (max-width: 1280px) {
   .app__wrapper {
     flex-direction: column;
+   
   }
 
-  .app__wrapper_img {
+  /* .app__wrapper_img {
     margin: 5rem 0 0 0;
-  }
+  } */
 
-  .app__wrapper_img-reverse {
+  /* .app__wrapper_img-reverse {
     margin: 0 0 5rem 0;
-  }
+  } */
 
   .app__wrapper_img img {
     width: 100%;

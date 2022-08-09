@@ -3,8 +3,12 @@ import images from "../../constants/images";
 import Lottie, { useLottie } from "lottie-react";
 import animation from "../../lottie/wine-shake.json";
 import { Waypoint } from "react-waypoint";
-import {Swiper, SwiperSlide} from "swiper/react";
-import { Navigation, EffectFade } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, EffectFade, Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import "swiper/css/autoplay"
 
 const AboutUs = () => {
   // const defaultOptions = {
@@ -21,7 +25,7 @@ const AboutUs = () => {
   // const { View } = useLottie(defaultOptions);
   return (
     <div
-      className="app__bg flex flex-col xl:flex-row items-center justify-center section__padding 2xl:h-screen"
+      className="app__bg flex flex-col 2xl:flex-row items-center justify-center section__padding 2xl:h-screen"
       id="about"
     >
       {/* <div className="absolute  flex__center z-0">
@@ -57,21 +61,57 @@ const AboutUs = () => {
           </span>
         </a>
         {renderLottie && (
-          <div className="hidden xl:flex mt-[90px]">
+          <div className="hidden 2xl:flex mt-[90px]">
             {" "}
-            <Lottie animationData={animation} loop={2}  />{" "}
+            <Lottie animationData={animation} loop={2} />{" "}
           </div>
         )}
       </div>
 
       {/* middle image  */}
-      <div className="z-10 mt-5 mb-4  lg:w-[575px]">
+      {/* <div className="z-10 mt-5 mb-4  lg:w-[575px]">
         <img
           src={images.about}
           alt=""
           className=" rounded-lg "
         />
-      </div>
+      </div> */}
+      {/* <div className="z-10 mt-5 mb-4"> */}
+      <Swiper
+        modules={[Navigation, EffectFade, Autoplay]}
+        navigation
+        effect ={'fade'}
+        speed={800}
+        slidesPerView={1}
+        loop
+        autoplay={{delay: 2500}}
+        className="w-full h-[326px] sm:h-[400px] lg:w-[575px] lg:h-[575px] z-10 mt-5 mb-4"
+      >
+        <SwiperSlide>
+          <img
+            src={images.about}
+            alt=""
+            className="rounded-lg w-full h-full object-cover"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src={images.slider_two}
+            alt=""
+            className="rounded-lg w-full h-full object-cover"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img
+            src={images.slider_three}
+            alt=""
+            className="rounded-lg w-full h-full object-cover"
+          />
+        </SwiperSlide>
+      </Swiper>
+      {/* </div> */}
 
       {/* right side text */}
       <div

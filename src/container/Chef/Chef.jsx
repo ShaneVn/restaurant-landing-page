@@ -7,16 +7,16 @@ const Chef = () => {
     <div className="app__bg app__wrapper section__padding" id="chef">
       {/* left image */}
       <div
-        data-aos="zoom-in"
-        data-aos-duration="1200"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        className="app__wrapper_img lg:mr-[200px]"
+        // data-aos="zoom-in"
+        // data-aos-duration="1200"
+        // data-aos-easing="ease-in-out"
+        // data-aos-mirror="true"
+        className="app__wrapper_img xl:mr-[200px]"
       >
         <img src={images.chef} alt="chef" className=" 3xl:w-[90%]" />
       </div>
       {/* right text */}
-      <div className="flex-1 mt-10 lg:mt-0 ">
+      <div className="flex-1 mt-10 xl:mt-0 ">
         <SubHeading title="Chef's Word" />
         <h1 className="section-title mb-12">What we Believe in </h1>
         <div className="flex items-end justify-start ">

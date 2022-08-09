@@ -29,8 +29,12 @@ import dinner from "../assets/dinner.jpg"
 import drink from "../assets/drink.webp"
 import about from "../assets/about-us.jpg"
 import dessert from "../assets/dessert.jpg"
+import slider_three from "../assets/about-slider-three.webp"
+import slider_two from "../assets/about-us-slide-two.jpg"
 
 export default {
+  slider_two,
+  slider_three,
   dessert,
   about,
   drink,
