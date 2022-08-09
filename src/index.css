@@ -24,6 +24,15 @@
 }
 
 
+@layer components{
+  .body_text{
+    @apply leading-8 font-openSans text-color_grey
+  }
+}
+
+ 
+
+
 
 
 

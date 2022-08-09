@@ -13,7 +13,7 @@ const Chef = () => {
         data-aos-mirror="true"
         className="app__wrapper_img lg:mr-[200px]"
       >
-        <img src={images.chef} alt="chef" className="" />
+        <img src={images.chef} alt="chef" />
       </div>
       {/* right text */}
       <div className="flex-1 mt-10 lg:mt-0 ">
