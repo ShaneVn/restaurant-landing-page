@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { meal } from "../../constants";
+import { wine } from "../../constants";
 import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
 
 import "./Intro.css";
@@ -21,7 +21,7 @@ const Intro = () => {
   return (
     <div className="hidden md:flex  h-[70%] relative group bg-color_black ">
       <video
-        src={meal}
+        src={wine}
         type="video/mp4"
         muted
         loop

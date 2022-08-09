@@ -18,7 +18,7 @@ const Awards = ({ award: { imgUrl, title, subtitle } }) => {
 };
 
 const Laurels = () => (
-  <div className="app__bg flex flex-col lg:flex-row  justify-between items-center section__padding" id="awards">
+  <div className="app__bg  h-[80%] flex flex-col lg:flex-row  justify-between items-center section__padding" id="awards">
     {/* left side text  */}
     <div className=" flex  flex-col flex-1  ">
       <SubHeading title={"Award & Recogonition"} />
@@ -31,12 +31,10 @@ const Laurels = () => (
     </div>
 
     {/* right side image */}
-    <div className="flex-1 ">
-      <img src={images.laurels} alt="laurels" className="lg:w-[80%]" 
-      data-aos="zoom-in"
-      data-aos-duration="1200"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"/>
+    <div className="flex-1">
+      <img src="https://images.unsplash.com/photo-1458253756247-1e4ed949191b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGZvb2QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&w=1000&q=80"
+       alt="laurels" className="rounded-xl" 
+      />
     </div>
   </div>
 );
