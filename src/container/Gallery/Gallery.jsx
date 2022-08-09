@@ -3,7 +3,7 @@ import React from 'react';
 import './Gallery.css';
 
 const Gallery = () => (
-  <div>
+  <div className='bg-color_black h-screen'>
     Gallery
   </div>
 );

@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import images from "../../constants/images";
 import Lottie, { useLottie } from "lottie-react";
-import animation from "../../lottie/mobile.json";
+import animation from "../../lottie/wine-shake.json";
+import { Waypoint } from "react-waypoint";
+import {Swiper, SwiperSlide} from "swiper/react";
+import { Navigation, EffectFade } from "swiper";
 
 const AboutUs = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: animation,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
-  const { View } = useLottie(defaultOptions);
+  let [renderLottie, setRenderLottie] = useState(false);
+
+  // const { View } = useLottie(defaultOptions);
   return (
     <div
       className="app__bg flex flex-col xl:flex-row items-center justify-center section__padding 2xl:h-screen"
@@ -23,8 +28,10 @@ const AboutUs = () => {
         <img src={images.G} alt="G" className="w-[391px] h-[415px]" />
       </div> */}
 
+      <Waypoint onEnter={() => setRenderLottie(true)} />
+      <Waypoint onLeave={() => setRenderLottie(false)} />
 
-{/* left part text */}
+      {/* left part text */}
       <div
         className="z-10 flex flex-col lg:items-end mr-[80px] flex-1 items-start mb-5 lg:self-start 
       lg:ml-auto"
@@ -49,14 +56,24 @@ const AboutUs = () => {
             Know More
           </span>
         </a>
-
-        <div className="hidden xl:flex"> {View} </div>
+        {renderLottie && (
+          <div className="hidden xl:flex mt-[90px]">
+            {" "}
+            <Lottie animationData={animation} loop={2}  />{" "}
+          </div>
+        )}
       </div>
 
+      {/* middle image  */}
       <div className="z-10 mt-5 mb-4  lg:w-[575px]">
-        <img src={images.about} alt="" className=" rounded-lg" />
+        <img
+          src={images.about}
+          alt=""
+          className=" rounded-lg "
+        />
       </div>
 
+      {/* right side text */}
       <div
         className="z-10  flex-1 ml-[70px] flex flex-col items-end lg:items-start lg:self-end"
         data-aos="fade-right"

@@ -15,7 +15,7 @@ const Header = () => {
   //     preserveAspectRatio: "xMidYMid slice",
   //   },
   // };
-  let [renderLottie, setRenderLottie] = useState(true);
+ 
 
   return (
     <div className="bg-black ">
