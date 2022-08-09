@@ -84,7 +84,7 @@ const AboutUs = () => {
         speed={800}
         slidesPerView={1}
         loop
-        autoplay={{delay: 2500}}
+        autoplay={{delay: 2500, disableOnInteraction: false}}
         className="w-full h-[326px] sm:h-[400px] lg:w-[575px] lg:h-[575px] z-10 mt-5 mb-4"
       >
         <SwiperSlide>
