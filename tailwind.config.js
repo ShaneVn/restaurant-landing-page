@@ -17,6 +17,9 @@ module.exports = {
         color_grey: "#AAAAAA",
         color_white: "#FFFFFF",
       },
+      screens: {
+        '3xl': '1855px',
+      },
     },
   },
   plugins: [],

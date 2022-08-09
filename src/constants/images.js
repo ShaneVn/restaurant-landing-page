@@ -28,8 +28,10 @@ import cocktail from "../assets/cocktail.jpg"
 import dinner from "../assets/dinner.jpg"
 import drink from "../assets/drink.webp"
 import about from "../assets/about-us.jpg"
+import dessert from "../assets/dessert.jpg"
 
 export default {
+  dessert,
   about,
   drink,
   dinner,
