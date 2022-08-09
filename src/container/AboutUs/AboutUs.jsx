@@ -81,7 +81,7 @@ const AboutUs = () => {
         modules={[Navigation, EffectFade, Autoplay]}
         navigation
         effect ={'fade'}
-        speed={800}
+        speed={1200}
         slidesPerView={1}
         loop
         autoplay={{delay: 2500, disableOnInteraction: false}}
