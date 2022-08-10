@@ -1,6 +1,7 @@
 import React from "react";
 import { images } from "../../constants";
 import { SubHeading } from "../../components";
+import { Button } from "../../components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade, Autoplay } from "swiper";
 import "swiper/css";
@@ -11,6 +12,13 @@ import "swiper/css/autoplay";
 import "./Gallery.css";
 
 const Gallery = () => {
+  const galleryImages = [
+    images.gallery01,
+    images.gallery02,
+    images.gallery03,
+    images.gallery04,
+  ];
+
   return (
     <div className="bg-color_black section__padding flex flex-col xl:flex-row">
       <div className="flex flex-col mr-[70px] xl:w-1/3 ">
@@ -21,17 +29,7 @@ const Gallery = () => {
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum
           volutpat morbi facilisis tellu
         </p>
-        <div className="">
-          <a
-            href="#chef"
-            class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
-          >
-            <span class="w-48 h-48 rounded rotate-[-40deg] bg-color_golden absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-            <span class="relative w-full text-left text-color_black font-bold font-cormorant text-lg transition-colors duration-300 ease-in-out group-hover:text-white">
-              Know More
-            </span>
-          </a>
-        </div>
+        <Button text="Know More" />
       </div>
       <Swiper
         modules={[Navigation, EffectFade, Autoplay]}
@@ -57,37 +55,15 @@ const Gallery = () => {
         }}
         className="xl:w-2/3 w-full mt-12 xl:mt-0 xl:h-[500px] h-[450px] "
       >
-        <SwiperSlide className="">
-          <img
-            src={images.gallery01}
-            alt=""
-            className=" w-full h-full object-cover cursor-pointer hover_image"
-          />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img
-            src={images.gallery02}
-            alt=""
-            className="w-full h-full object-cover cursor-pointer hover_image"
-          />
-        </SwiperSlide>
-
-        <SwiperSlide className="">
-          <img
-            src={images.gallery03}
-            alt=""
-            className="w-full h-full object-cover cursor-pointer hover_image"
-          />
-        </SwiperSlide>
-
-        <SwiperSlide className="">
-          <img
-            src={images.gallery04}
-            alt=""
-            className=" w-full h-full object-cover cursor-pointer hover_image"
-          />
-        </SwiperSlide>
+        {galleryImages.map((img) => (
+          <SwiperSlide className="">
+            <img
+              src={img}
+              alt=""
+              className=" w-full h-full object-cover cursor-pointer hover_image"
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
