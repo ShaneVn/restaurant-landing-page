@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import images from "../../constants/images";
-import Lottie, { useLottie } from "lottie-react";
+import Lottie from "lottie-react";
 import animation from "../../lottie/wine-shake.json";
 import { Waypoint } from "react-waypoint";
 import { Swiper, SwiperSlide } from "swiper/react";

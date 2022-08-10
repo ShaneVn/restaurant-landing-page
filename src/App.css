@@ -217,3 +217,24 @@
     overflow-x: hidden;
   }
 } */
+
+
+
+
+@media screen and (min-width: 576px) {
+  .swiper-container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-container {
+    width: 1280px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .swiper-container {
+    width: 1800px;
+  }
+}
