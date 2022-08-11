@@ -7,10 +7,10 @@ const Chef = () => {
     <div className="app__bg app__wrapper section__padding" id="chef">
       {/* left image */}
       <div
-        // data-aos="zoom-in"
-        // data-aos-duration="1200"
-        // data-aos-easing="ease-in-out"
-        // data-aos-mirror="true"
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
         className="app__wrapper_img xl:mr-[200px]"
       >
         <img src={images.chef} alt="chef" className=" 3xl:w-[90%]" />

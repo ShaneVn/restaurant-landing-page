@@ -5,10 +5,11 @@ import animation from "../../lottie/wine-shake.json";
 import { Waypoint } from "react-waypoint";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade, Autoplay } from "swiper";
+import { Button } from "../../components";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import "swiper/css/autoplay"
+import "swiper/css/autoplay";
 
 const AboutUs = () => {
   // const defaultOptions = {
@@ -51,15 +52,7 @@ const AboutUs = () => {
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum
           volutpat morbi facilisis tellu
         </p>
-        <a
-          href="#chef"
-          class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
-        >
-          <span class="w-48 h-48 rounded rotate-[-40deg] bg-color_golden absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-          <span class="relative w-full text-left text-color_black font-bold font-cormorant text-lg transition-colors duration-300 ease-in-out group-hover:text-white">
-            Know More
-          </span>
-        </a>
+        <Button text="Know More" section="chef"/>
         {renderLottie && (
           <div className="hidden 2xl:flex mt-[90px]">
             {" "}
@@ -80,11 +73,11 @@ const AboutUs = () => {
       <Swiper
         modules={[Navigation, EffectFade, Autoplay]}
         navigation
-        effect ={'fade'}
+        effect={"fade"}
         speed={1200}
         slidesPerView={1}
         loop
-        autoplay={{delay: 2500, disableOnInteraction: false}}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         className="w-full h-[326px] sm:h-[400px] lg:w-[575px] lg:h-[575px] z-10 mt-5 mb-4"
       >
         <SwiperSlide>
@@ -129,15 +122,7 @@ const AboutUs = () => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat
         </p>
-        <a
-          href="#chef"
-          class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
-        >
-          <span class="w-48 h-48 rounded rotate-[-40deg] bg-color_golden absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-          <span class="relative w-full text-left text-color_black font-cormorant font-bold  text-lg transition-colors duration-300 ease-in-out group-hover:text-white">
-            Know More
-          </span>
-        </a>
+        <Button text="Know More" section="chef"/>
       </div>
     </div>
   );

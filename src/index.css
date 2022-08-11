@@ -13,20 +13,20 @@
 
 @layer components{
   .section-title{
-    @apply font-cormorant lg:text-[70px] text-[50px] text-color_golden 
+    @apply font-cormorant lg:text-[64px] text-[50px] text-color_golden tracking-wide font-medium
   }
 }
 
 @layer components{
   .hover_image{
-    @apply duration-300 ease-in-out hover:scale-110 cursor-pointer
+    @apply duration-300 ease-in-out hover:scale-110 cursor-pointer 
   }
 }
 
 
 @layer components{
   .body_text{
-    @apply leading-8 font-openSans text-color_grey
+    @apply leading-8 font-openSans text-color_grey tracking-wide
   }
 }
 
