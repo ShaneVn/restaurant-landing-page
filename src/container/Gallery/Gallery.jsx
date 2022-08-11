@@ -24,7 +24,7 @@ const Gallery = () => {
       <div className="flex flex-col mr-[70px] xl:w-1/3 ">
         <SubHeading title="Instagram" />
         <h1 className="section-title mb-12"> Photo Gallery</h1>
-        <p className="body_text mb-5">
+        <p className="body_text mb-10">
           {" "}
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum
           volutpat morbi facilisis tellu
