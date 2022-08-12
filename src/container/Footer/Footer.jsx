@@ -7,9 +7,9 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col  w-full h-auto items-center app__bg section__padding">
+    <div className="flex flex-col  w-full h-auto items-center app__bg ">
       {/* top box for newsletter */}
-      <div className="bg-color_black h-[250px]  w-screen flex flex-col items-center pt-12">
+      <div className="bg-color_black h-[250px]  w-full flex flex-col items-center pt-12 section__padding">
         <div
           className="flex flex-col items-center border-2 py-7 px-[80px] bg-color_black 
         border-color_golden mt-5 "
@@ -19,8 +19,8 @@ const Footer = () => {
           <p className="body_text text-color_white mb-12">
             And Never Miss Latest Updates!{" "}
           </p>
-          <div className="flex items-center w-full">
-            <div className=" border-[1px] w-full mr-10 border-color_golden rounded-[5px] overflow-hidden ">
+          <div className="flex flex-col xl:flex-row items-center w-full">
+            <div className=" border-[1px] w-full xl:mr-10 mb-5 xl:mb-0 border-color_golden rounded-[5px] overflow-hidden ">
               <input
                 type="email"
                 placeholder="Enter Your Email Address"
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       {/* middle section */}
-      <div className="flex flex-col xl:flex-row justify-center items-center mt-[300px] xl:mt-[260px] w-full ">
+      <div className="flex flex-col xl:flex-row justify-center items-center mt-[400px] xl:mt-[220px] w-full section__padding ">
         {/* left side text */}
         <div className="flex flex-col items-center mb-5 xl:mb-0 xl:mt-3 ">
           <h1
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="body_text xl:mt-[70px]  mt-10">
+      <p className="body_text mb-[70px]">
         2022 L’Orphéon. All Rights Reserved.
       </p>
     </div>
