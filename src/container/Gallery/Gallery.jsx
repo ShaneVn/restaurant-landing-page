@@ -20,7 +20,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="bg-color_black section__padding flex flex-col xl:flex-row">
+    <div className="bg-color_black section__padding flex flex-col xl:flex-row" id="gallery">
       <div className="flex flex-col mr-[70px] xl:w-1/3 ">
         <SubHeading title="Instagram" />
         <h1 className="section-title mb-12"> Photo Gallery</h1>

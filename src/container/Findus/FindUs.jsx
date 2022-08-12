@@ -5,7 +5,7 @@ import { images } from "../../constants";
 
 const FindUs = () => {
   return (
-    <div className="flex__center app__bg section__padding flex-col xl:flex-row ">
+    <div className="flex__center app__bg section__padding flex-col xl:flex-row " id="contact">
       <div className="flex-1 flex flex-col mr-[80px] mb-[100px] xl:mb-0 self-start xl:self-center">
         <SubHeading title="contact" />
         <h1 className="section-title mb-[50px]">Find Us</h1>
