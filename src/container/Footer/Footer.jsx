@@ -58,8 +58,8 @@ const Footer = () => {
             Others."
           </p>
           <img src={images.spoon_right} alt="" className="mt-5" />
-          <div className="text-color_white flex mt-5 space-x-8 text-[30px]">
-            <FiFacebook className="font-[24px]" />
+          <div className="text-color_white flex mt-5 space-x-8 text-[30px] cursor-pointer">
+            <FiFacebook />
             <FiTwitter />
             <FiInstagram />
           </div>
