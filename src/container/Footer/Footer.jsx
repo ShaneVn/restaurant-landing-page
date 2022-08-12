@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Newsletter, SubHeading } from "../../components";
+import { Button, SubHeading } from "../../components";
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 import { images } from "../../constants";
 
@@ -32,9 +32,9 @@ const Footer = () => {
         </div>
       </div>
       {/* middle section */}
-      <div className="flex flex-col xl:flex-row justify-center items-center mt-[300px] xl:mt-[220px] w-full space-y-12">
+      <div className="flex flex-col xl:flex-row justify-center items-center mt-[300px] xl:mt-[260px] w-full ">
         {/* left side text */}
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center mb-5 xl:mb-0 xl:mt-3 ">
           <h1
             className="
             text-color_crimson
@@ -45,20 +45,20 @@ const Footer = () => {
           >
             Contact Us
           </h1>
-          <p className="body_text">9 W 53rd St, New York, NY 10019, USA</p>
+          <p className="body_text mb-3">9 W 53rd St, New York, NY 10019, USA</p>
           <p className="body_text">+1 212-344-1230</p>
           <p className="body_text">+1 212-555-1230</p>
         </div>
         {/* middle  */}
-        <div className="flex flex-col items-center xl:ml-[150px] xl:mr-[200px] pt-0 mt-0">
-          <h1 className="section-title  pt-0 mt-0 ">L’Orphéon</h1>
+        <div className="flex flex-col items-center xl:ml-[150px] xl:mr-[200px]  mb-5 xl:mb-0 ">
+          <h1 className="section-title">L’Orphéon</h1>
           <p className="body_text w-[80%] text-center">
             {" "}
             "The Best Way To Find Yourself Is To Lose Yourself In The Service Of
             Others."
           </p>
           <img src={images.spoon_right} alt="" className="mt-5" />
-          <div className="text-color_white flex mt-5 space-x-5 text-[30px]">
+          <div className="text-color_white flex mt-5 space-x-8 text-[30px]">
             <FiFacebook className="font-[24px]" />
             <FiTwitter />
             <FiInstagram />
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         {/* right side */}
-        <div className="xl:mr-6 flex flex-col items-center justify-center">
+        <div className="xl:mr-6 flex flex-col items-center justify-center mt-[25px]">
           <h1 className="text-color_crimson font-cormorant font-normal text-4xl mb-3">
             Working Hours
           </h1>
