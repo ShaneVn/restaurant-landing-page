@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="bg-black ">
       <div
-        className="flex items-center justify-between h-screen section__padding app__header "
+        className="flex items-center justify-between min-h-screen section__padding app__header "
         id="home"
       >
         {/* block of text here */}
