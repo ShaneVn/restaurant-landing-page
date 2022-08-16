@@ -3,8 +3,11 @@ import { MenuItem, SubHeading } from "../../components";
 import images from "../../constants/images";
 import { data } from "../../constants";
 import { Button } from "../../components";
+import { useNavigate } from "react-router-dom";
 
 const SpecialMenu = () => {
+
+  const navigate = useNavigate()
   return (
     <div
       className=" flex flex-col items-center bg-color_black section__padding  "
@@ -69,8 +72,8 @@ const SpecialMenu = () => {
           ))}
         </div>
       </div>
-      <div className="mt-10 ">
-        <Button text="View More" section="gallery" />
+      <div className="mt-10" onClick={()=>navigate("/order")}>
+        <Button text="View More" section="order_home" />
       </div>
     </div>
   );
