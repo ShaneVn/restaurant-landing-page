@@ -24,6 +24,15 @@
   background-attachment: fixed;
 }
 
+.order__header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("https://images7.alphacoders.com/313/thumb-1920-313058.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 @media screen and (max-width: 1280px) {
   .app__header {
     background-position: bottom 0% right 20%;
@@ -33,7 +42,7 @@
 @media screen and (max-width: 767px) {
   .app__header {
     background-position: bottom 0% right 20%;
-    background-attachment: scroll
+    background-attachment: scroll;
   }
 }
 
@@ -148,18 +157,14 @@
   }
 }
 
-
 .swiper-button-next,
-.swiper-button-prev{
+.swiper-button-prev {
   color: white !important;
 }
-
-
 
 @media screen and (max-width: 1280px) {
   .app__wrapper {
     flex-direction: column;
-   
   }
 
   /* .app__wrapper_img {
@@ -217,9 +222,6 @@
     overflow-x: hidden;
   }
 } */
-
-
-
 
 @media screen and (min-width: 576px) {
   .swiper-container {

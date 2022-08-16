@@ -31,8 +31,10 @@ import about from "../assets/about-us.jpg";
 import dessert from "../assets/dessert.jpg";
 import slider_three from "../assets/about-slider-three.webp";
 import slider_two from "../assets/about-us-slide-two.jpg";
+import pizza from "../assets/pizza-3.jpg"
 
 const images = {
+  pizza,
   slider_two,
   slider_three,
   dessert,

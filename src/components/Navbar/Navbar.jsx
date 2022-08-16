@@ -2,22 +2,33 @@ import { useState } from "react";
 import images from "../../constants/images";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 
 // <GiHamburgerMenu/>
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState(false);
+  const navigate = useNavigate()
 
   console.log(isToggle);
   return (
-    <div className="flex bg-color_black justify-between items-center py-5 lg:px-[100px] px-[50px] text-white fixed w-full z-50 top-0" 
-    data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out">
+    <div
+      className="flex bg-color_black justify-between items-center py-5 lg:px-[100px] px-[50px] text-white fixed w-full z-50 top-0"
+      data-aos="fade-down"
+      data-aos-duration="700"
+      data-aos-easing="ease-in-out"
+    >
       <div>
-      <a href="#home">  <h1 className="text-4xl font-cormorant cursor-pointer text-color_golden font-bold">L’Orphéon</h1> </a>
+        <a href="#home" onClick={()=>navigate("/")}>
+          {" "}
+          <h1 className="text-4xl font-cormorant cursor-pointer text-color_golden font-bold">
+            L’Orphéon
+          </h1>{" "}
+        </a>
       </div>
       <div>
         <ul className="hidden space-x-8 lg:flex font-cormorant text-lg ">
           <li className="">
-            <a className="nav-hover" href="#home">
+            <a className="nav-hover" href="#home" onClick={()=>navigate("/")}>
               Home
             </a>
           </li>
@@ -48,9 +59,9 @@ const Navbar = () => {
           Login / Register
         </a>
         <div className="border-[0.5px] #545454 h-[30px] border-color_gray" />
-        <a className="nav-hover" href="">
-          Book Table
-        </a>
+        <p className="nav-hover cursor-pointer" onClick={()=>navigate("/order")}>
+          Order Now
+        </p>
       </div>
 
       <div className="lg:hidden flex items-center nav-hover cursor-pointer">
@@ -67,7 +78,10 @@ const Navbar = () => {
             className="absolute text-color_golden top-5 right-5 cursor-pointer"
             onClick={() => setIsToggle(false)}
           />
-          <ul className="text-xl space-y-4 font-cormorant text-color_golden" onClick={() => setIsToggle(false)}>
+          <ul
+            className="text-xl space-y-4 font-cormorant text-color_golden"
+            onClick={() => setIsToggle(false)}
+          >
             <li className="">
               <a className="nav-hover" href="#home">
                 Home

@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 import {
   AboutUs,
@@ -10,22 +11,37 @@ import {
   Intro,
   Laurels,
   SpecialMenu,
+  Order,
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
 
 const App = () => (
   <div className="h-screen">
-    <Navbar />
-    <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    <Laurels />
-     <Gallery />
-    <FindUs />
-    <Footer /> 
+    <BrowserRouter>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Header />
+              <AboutUs />
+              <SpecialMenu />
+              <Chef />
+              <Intro />
+              <Laurels />
+              <Gallery />
+              <FindUs />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route exact path="/order" element={<><Navbar /><Order /><Footer /></>} />
+      </Routes>
+    </BrowserRouter>
   </div>
 );
 
