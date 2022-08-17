@@ -26,7 +26,7 @@ function OrderBody() {
       </ul>
 
       {/* food items here */}
-      <div className="flex justify-center items-center ">
+      <div className="flex flex-col 2xl:flex-row justify-center items-center">
         {data.pizzaMenu.map((pizza) => (
           <OrderItem
             image={pizza.img}
