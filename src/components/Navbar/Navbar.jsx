@@ -59,9 +59,9 @@ const Navbar = () => {
           Login / Register
         </a>
         <div className="border-[0.5px] #545454 h-[30px] border-color_gray" />
-        <p className="nav-hover cursor-pointer" onClick={()=>navigate("/order")}>
+        <a className="nav-hover cursor-pointer" onClick={()=>navigate("/order")} href="#order_home" >
           Order Now
-        </p>
+        </a>
       </div>
 
       <div className="lg:hidden flex items-center nav-hover cursor-pointer">
