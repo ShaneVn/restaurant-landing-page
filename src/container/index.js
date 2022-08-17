@@ -9,8 +9,10 @@ import Laurels from './Laurels/Laurels';
 import SpecialMenu from './Menu/SpecialMenu';
 import Order from './Order/Order';
 import OrderBody from './OrderBody/OrderBody';
+import PageNotFound from './PageNotFound/PageNotFound';
 
 export {
+  PageNotFound,
   AboutUs,
   Chef,
   FindUs,

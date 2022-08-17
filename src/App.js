@@ -13,6 +13,7 @@ import {
   SpecialMenu,
   Order,
   OrderBody,
+  PageNotFound,
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
@@ -48,6 +49,17 @@ const App = () => (
               <Navbar />
               <Order />
               <OrderBody />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          path="*"
+          element={
+            <>
+              <Navbar />
+              <PageNotFound />
               <Footer />
             </>
           }

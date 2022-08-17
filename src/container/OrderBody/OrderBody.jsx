@@ -1,12 +1,23 @@
 import React from "react";
-import { Button } from "../../components";
+import { Button, OrderItem } from "../../components";
 import { images } from "../../constants";
 
 function OrderBody() {
   return (
     <div className="flex flex-col items-center bg-color_black section__padding">
-      <h1 className="section-title mb-[90px]">Choose Your favorite</h1>
-      <div className="flex flex__center">
+      <h1 className="section-title mb-[50px]">Choose Your favorite</h1>
+
+      <div
+        className="flex items-center p__cormorant mb-12 sm:space-x-[200px] space-x-[90px] py-2
+      border-t-[1px] border-b-[1px]  border-color_golden cursor-pointer  "
+      >
+        <h1 className="nav-hover">Pizza</h1>
+        <h1 className="nav-hover">Steak</h1>
+        <h1 className="nav-hover">Pasta</h1>
+      </div>
+
+      {/* food items here */}
+      <div className="flex justify-center items-center ">
         <div className="flex flex-col justify-center items-center space-y-14 flex-1">
           <div
             className="h-[300px] w-[300px] "
@@ -22,8 +33,8 @@ function OrderBody() {
             </p>
           </div>
           <Button text="Add To Cart" />
-          <div></div>
         </div>
+        {/* <OrderItem image={images.product02} text="Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto" title="Hawaiian Paradise"/> */}
       </div>
     </div>
   );
