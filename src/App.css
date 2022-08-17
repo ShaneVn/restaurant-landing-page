@@ -101,6 +101,8 @@
   cursor: pointer;
 }
 
+
+/* use for section subtitle */
 .p__cormorant {
   font-family: var(--font-base);
   color: var(--color-white);

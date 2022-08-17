@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {
   AboutUs,
@@ -12,6 +12,7 @@ import {
   Laurels,
   SpecialMenu,
   Order,
+  OrderBody,
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
@@ -39,7 +40,18 @@ const App = () => (
           }
         />
 
-        <Route exact path="/order" element={<><Navbar /><Order /><Footer /></>} />
+        <Route
+          exact
+          path="/order"
+          element={
+            <>
+              <Navbar />
+              <Order />
+              <OrderBody />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </BrowserRouter>
   </div>

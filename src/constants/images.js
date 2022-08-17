@@ -5,7 +5,6 @@ import gallery01 from "../assets/gallery01.png";
 import gallery02 from "../assets/gallery02.png";
 import gallery03 from "../assets/gallery03.png";
 import gallery04 from "../assets/gallery04.png";
-import knife from "../assets/knife.png";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu.png";
 import overlaybg from "../assets/overlaybg.png";
@@ -23,26 +22,26 @@ import quote from "../assets/quote.png";
 import gericht from "../assets/gericht.png";
 import steak from "../assets/Pan-Seared-Steak-4.jpg";
 import menu_dark from "../assets/menu-dark.jpg";
-import restaurant_background from "../assets/restaurant-background.jpg";
-import cocktail from "../assets/cocktail.jpg";
-import dinner from "../assets/dinner.jpg";
 import drink from "../assets/drink.webp";
 import about from "../assets/about-us.jpg";
 import dessert from "../assets/dessert.jpg";
 import slider_three from "../assets/about-slider-three.webp";
 import slider_two from "../assets/about-us-slide-two.jpg";
 import pizza from "../assets/pizza-3.jpg"
+import product01 from "../assets/product-1.jpg"
+import product02 from "../assets/product-2.jpg"
+import product03 from "../assets/product-3.jpg"
 
 const images = {
+  product01,
+  product02,
+  product03,
   pizza,
   slider_two,
   slider_three,
   dessert,
   about,
   drink,
-  dinner,
-  cocktail,
-  restaurant_background,
   menu_dark,
   steak,
   bg,
@@ -52,7 +51,6 @@ const images = {
   gallery02,
   gallery03,
   gallery04,
-  knife,
   logo,
   menu,
   overlaybg,
