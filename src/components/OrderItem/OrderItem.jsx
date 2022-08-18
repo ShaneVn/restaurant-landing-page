@@ -12,7 +12,7 @@ function OrderItem({ desc, image, name, price, alt }) {
       </div>
       <div className="text-center w-[50%]">
         <h1 className="p__cormorant mt-5">{name}</h1>
-        <p className="body_text text-center">{desc}</p>
+        <p className="body-text text-center">{desc}</p>
       </div>
       <h1 className="p__cormorant">{price}</h1>
 

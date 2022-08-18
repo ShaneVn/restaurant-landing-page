@@ -88,6 +88,13 @@ const orderTitleListOne = [
   { category: "Pasta", id: 3 },
 ];
 
+const orderTitleListTwo = [
+  {
+    category: "Dessert",
+    id: 1,
+  },
+];
+
 const pizzaMenu =[
   {
     img: images.product01,
@@ -181,6 +188,37 @@ const pastaMenu =[
 ]
 
 
-const data = { wines, cocktails, awards, orderTitleListOne, pizzaMenu, saladMenu, pastaMenu };
+const dessertMenu =[
+  {
+    img: images.sweet01,
+    alt: 'Salad',
+    name: 'Amazing Dessert',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$19.99',
+    button: 'Add to Cart'
+  },
+  {
+    img: images.sweet02,
+    alt: 'Salad',
+    name: 'Delicious Dessert',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$16.99',
+    button: 'Add to Cart'
+  },
+  {
+    img: images.sweet03,
+    alt: 'Salad',
+    name: 'Awesome Dessert',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$14.99',
+    button: 'Add to Cart'
+  }
+]
+
+
+const data = { wines, cocktails, awards, orderTitleListOne, pizzaMenu, saladMenu, pastaMenu,dessertMenu, orderTitleListTwo };
 
 export default data;

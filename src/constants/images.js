@@ -37,8 +37,18 @@ import salad03 from "../assets/salad03.jpg"
 import pasta01 from "../assets/pasta01.jpg"
 import pasta02 from "../assets/pasta02.jpg"
 import pasta03 from "../assets/pasta03.jpg"
+import order_background from "../assets/order-background.jpg"
+import order_banner from "../assets/order-banner.jpg"
+import sweet01 from "../assets/sweet01.jpg"
+import sweet02 from "../assets/sweet02.jpg"
+import sweet03 from "../assets/sweet03.jpg"
 
 const images = {
+  sweet01,
+  sweet02,
+  sweet03,
+  order_background,
+  order_banner,
   pasta01,
   pasta02,
   pasta03,

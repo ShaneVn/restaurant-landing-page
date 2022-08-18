@@ -9,7 +9,7 @@ const FindUs = () => {
       <div className="flex-1 flex flex-col mr-[80px] mb-[100px] xl:mb-0 self-start xl:self-center">
         <SubHeading title="contact" />
         <h1 className="section-title mb-[50px]">Find Us</h1>
-        <p className="body_text mb-[50px]">
+        <p className="body-text mb-[50px]">
           Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
         </p>
         <div className="flex flex-col space-y-5 mb-10">

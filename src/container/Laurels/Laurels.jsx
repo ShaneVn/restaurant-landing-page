@@ -11,7 +11,7 @@ const Awards = ({ award: { imgUrl, title, subtitle } }) => {
       </div>
       <div className="flex flex-col">
         <p className="font-cormorant text-color_golden text-xl ">{title}</p>
-        <p className="body_text lg:w-[70%]">{subtitle}</p>
+        <p className="body-text lg:w-[70%]">{subtitle}</p>
       </div>
     </div>
   );

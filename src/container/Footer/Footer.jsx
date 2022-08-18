@@ -16,7 +16,7 @@ const Footer = () => {
         >
           <SubHeading title="Newsletter" imageCenter />
           <h1 className="section-title">Subscribe To Our NewsLetter</h1>
-          <p className="body_text text-color_white mb-12">
+          <p className="body-text text-color_white mb-12">
             And Never Miss Latest Updates!{" "}
           </p>
           <div className="flex flex-col xl:flex-row items-center w-full">
@@ -45,14 +45,14 @@ const Footer = () => {
           >
             Contact Us
           </h1>
-          <p className="body_text mb-3">9 W 53rd St, New York, NY 10019, USA</p>
-          <p className="body_text">+1 212-344-1230</p>
-          <p className="body_text">+1 212-555-1230</p>
+          <p className="body-text mb-3">9 W 53rd St, New York, NY 10019, USA</p>
+          <p className="body-text">+1 212-344-1230</p>
+          <p className="body-text">+1 212-555-1230</p>
         </div>
         {/* middle  */}
         <div className="flex flex-col items-center xl:ml-[150px] xl:mr-[200px]  mb-5 xl:mb-0 ">
           <h1 className="section-title">L’Orphéon</h1>
-          <p className="body_text w-[80%] text-center">
+          <p className="body-text w-[80%] text-center">
             {" "}
             "The Best Way To Find Yourself Is To Lose Yourself In The Service Of
             Others."
@@ -70,14 +70,14 @@ const Footer = () => {
           <h1 className="text-color_crimson font-cormorant font-normal text-4xl mb-3">
             Working Hours
           </h1>
-          <p className="body_text">Monday-Friday:</p>
-          <p className="body_text mb-2">08:00 Am - 12:00 Am</p>
-          <p className="body_text">Saturday-Sunday:</p>
-          <p className="body_text">07:00 Am - 11:00 Pm</p>
+          <p className="body-text">Monday-Friday:</p>
+          <p className="body-text mb-2">08:00 Am - 12:00 Am</p>
+          <p className="body-text">Saturday-Sunday:</p>
+          <p className="body-text">07:00 Am - 11:00 Pm</p>
         </div>
       </div>
 
-      <p className="body_text mb-[70px]">
+      <p className="body-text mb-[70px]">
         2022 L’Orphéon. All Rights Reserved.
       </p>
     </div>
