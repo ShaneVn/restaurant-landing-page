@@ -8,7 +8,7 @@ function OrderItem({ desc, image, name, price, alt }) {
         className="h-[300px] w-[300px] "
         style={{ boxShadow: "8px 8px #fdc500" }}
       >
-        <img src={image} alt={alt} className="h-full w-full" />
+        <img src={image} alt={alt} className="h-full w-full object-cover" />
       </div>
       <div className="text-center w-[50%]">
         <h1 className="p__cormorant mt-5">{name}</h1>

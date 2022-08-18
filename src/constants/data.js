@@ -119,6 +119,68 @@ const pizzaMenu =[
 ]
 
 
-const data = { wines, cocktails, awards, orderTitleListOne, pizzaMenu };
+const saladMenu =[
+  {
+    img: images.salad01,
+    alt: 'Salad',
+    name: 'Supreme Salad',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$19.99',
+    button: 'Add to Cart'
+  },
+  {
+    img: images.salad02,
+    alt: 'Salad',
+    name: 'Cobb salad',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$16.99',
+    button: 'Add to Cart'
+  },
+  {
+    img: images.salad03,
+    alt: 'Salad',
+    name: 'Toss Green Salad',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$14.99',
+    button: 'Add to Cart'
+  }
+]
+
+
+const pastaMenu =[
+  {
+    img: images.pasta01,
+    alt: 'Salad',
+    name: 'Amazing Pasta',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$19.99',
+    button: 'Add to Cart'
+  },
+  {
+    img: images.pasta02,
+    alt: 'Salad',
+    name: 'Delicious Pasta',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$16.99',
+    button: 'Add to Cart'
+  },
+  {
+    img: images.pasta03,
+    alt: 'Salad',
+    name: 'Awesome Pasta',
+    desc:
+      'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
+    price: '$14.99',
+    button: 'Add to Cart'
+  }
+]
+
+
+const data = { wines, cocktails, awards, orderTitleListOne, pizzaMenu, saladMenu, pastaMenu };
 
 export default data;

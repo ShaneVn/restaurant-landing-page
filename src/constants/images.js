@@ -31,8 +31,20 @@ import pizza from "../assets/pizza-3.jpg"
 import product01 from "../assets/product-1.jpg"
 import product02 from "../assets/product-2.jpg"
 import product03 from "../assets/product-3.jpg"
+import salad01 from "../assets/salad01.jpg"
+import salad02 from "../assets/salad02.jpg"
+import salad03 from "../assets/salad03.jpg"
+import pasta01 from "../assets/pasta01.jpg"
+import pasta02 from "../assets/pasta02.jpg"
+import pasta03 from "../assets/pasta03.jpg"
 
 const images = {
+  pasta01,
+  pasta02,
+  pasta03,
+  salad01,
+  salad02,
+  salad03,
   product01,
   product02,
   product03,
