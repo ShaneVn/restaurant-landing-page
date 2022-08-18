@@ -46,6 +46,13 @@
   }
 }
 
+
+@media screen and (max-width: 767px) {
+  .order__header {
+    background-attachment: scroll;
+  }
+}
+
 /* @media screen and (max-width: 652px) {
   .app__header {
     background-position: bottom 0 right 20%;

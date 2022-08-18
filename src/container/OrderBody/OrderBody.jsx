@@ -30,7 +30,7 @@ function OrderBody() {
 
   
   return (
-    <div className="flex flex-col items-center bg-color_black section__padding">
+    <div className="flex flex-col items-center bg-color_black section__padding" id="order_body">
       <h1 className="section-title mb-[50px]">Choose Your favorite</h1>
 
       <ul

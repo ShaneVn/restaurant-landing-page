@@ -19,7 +19,7 @@ function Order() {
           Best Food In Town <br /> Order Now!
         </h1>
 
-        <Button text="Place Order" />
+        <Button text="Place Order" section="order_body" />
       </div>
     </div>
   );
