@@ -47,7 +47,9 @@ function OrderBody() {
       className="flex flex-col items-center bg-color_black section__padding"
       id="order_body"
     >
-      <h1 className="section-title mb-[50px] mt-3">Choose Your favorite</h1>
+      <h1 className="section-title mb-[50px] mt-3 text-center">
+        Choose Your favorite
+      </h1>
 
       <ul
         className="flex items-center p__cormorant mb-12 sm:space-x-[200px] space-x-[90px] 
@@ -81,7 +83,7 @@ function OrderBody() {
             <p className="p__opensans">what are you waiting for?</p> */}
       </div>
 
-      <h1 className="section-title mb-[50px] my-[90px]">
+      <h1 className="section-title mb-[50px] my-[90px] text-center">
         Some Sweet Treats for you
       </h1>
 
@@ -99,7 +101,7 @@ function OrderBody() {
         ))}
       </ul>
 
-      <div className="flex flex-col 2xl:flex-row justify-center items-center mb-[100px]">
+      <div className="flex flex-col 2xl:flex-row justify-center items-center  lg:mb-[100px]">
         {secondData.map((data) => (
           <OrderItem
             image={data.img}
