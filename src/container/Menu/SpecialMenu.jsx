@@ -59,7 +59,7 @@ const SpecialMenu = () => {
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
         >
-          <h1 className="text-color_white font-cormorant text-[40px] mb-10">
+          <h1 className="text-color_white font-cormorant text-[40px] mb-10 mt-5 sm:mt-0">
             Cocktails
           </h1>
           {data.cocktails.map((wine, index) => (

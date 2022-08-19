@@ -10,7 +10,7 @@ const Header = () => {
       >
         {/* block of text here */}
         <div 
-          className="app__wrapper_info mb-11 sm:mb-0"
+          className="app__wrapper_info mb-8 sm:mb-0"
           data-aos="fade-right"
           data-aos-duration="1200"
           data-aos-easing="ease-in-out"
