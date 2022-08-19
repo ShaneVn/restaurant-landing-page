@@ -15,6 +15,7 @@ function OrderBody() {
   const saladMenu = data.saladMenu;
   const pastaMenu = data.pastaMenu;
   const dessertMenu = data.dessertMenu;
+  const appetizerMenu = data.appetizerMenu
 
   useEffect(() => {
     switch (firstSelected) {
@@ -36,6 +37,9 @@ function OrderBody() {
     switch (secondSelected) {
       case "Dessert":
         setSecondData(dessertMenu);
+        break;
+      case "Appetizer":  
+        setSecondData(appetizerMenu);
         break;
       default:
         setSecondData(dessertMenu);
@@ -74,6 +78,7 @@ function OrderBody() {
             desc={data.desc}
             name={data.name}
             price={data.price}
+            key={data.name + data.id}
           />
         ))}
       </div>
@@ -109,6 +114,7 @@ function OrderBody() {
             desc={data.desc}
             name={data.name}
             price={data.price}
+            key={data.name + data.id}
           />
         ))}
       </div>

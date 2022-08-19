@@ -3,6 +3,9 @@ import images from "../../constants/images";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import {RiShoppingCartLine,RiShoppingCartFill } from "react-icons/ri"
+
+
 
 
 // <GiHamburgerMenu/>
@@ -56,6 +59,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="hidden space-x-8 sm:flex items-center font-cormorant">
+      <div className="cursor-pointer nav-hover group relative  ">
+        <RiShoppingCartLine fontSize={27} />
+        <div className=""></div>
+        </div>
         <a
           className="nav-hover cursor-pointer"
           onClick={() => navigate("/order")}

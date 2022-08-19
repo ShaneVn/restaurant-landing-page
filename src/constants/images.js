@@ -42,8 +42,15 @@ import order_banner from "../assets/order-banner.jpg"
 import sweet01 from "../assets/sweet01.jpg"
 import sweet02 from "../assets/sweet02.jpg"
 import sweet03 from "../assets/sweet03.jpg"
+import appetizer01 from "../assets/appetizer01.jpg"
+import appetizer02 from "../assets/appetizer02.jpg"
+import appetizer03 from "../assets/appetizer03.jpg"
+
 
 const images = {
+  appetizer01,
+  appetizer02,
+  appetizer03,
   sweet01,
   sweet02,
   sweet03,
