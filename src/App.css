@@ -57,7 +57,7 @@
 
 
 @media screen and (max-width: 767px) {
-  .order__header, .order__banner {
+  .order__header, .order__banner, .app__bg {
     background-attachment: scroll;
   }
 }

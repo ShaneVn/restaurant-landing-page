@@ -2,12 +2,13 @@ import { useState } from "react";
 import images from "../../constants/images";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+
 
 // <GiHamburgerMenu/>
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   console.log(isToggle);
   return (
@@ -18,7 +19,7 @@ const Navbar = () => {
       data-aos-easing="ease-in-out"
     >
       <div>
-        <a href="#home" onClick={()=>navigate("/")}>
+        <a href="#home" onClick={() => navigate("/")}>
           {" "}
           <h1 className="text-4xl font-cormorant cursor-pointer text-color_golden font-bold">
             L’Orphéon
@@ -28,7 +29,7 @@ const Navbar = () => {
       <div>
         <ul className="hidden space-x-8 lg:flex font-cormorant text-lg ">
           <li className="">
-            <a className="nav-hover" href="#home" onClick={()=>navigate("/")}>
+            <a className="nav-hover" href="#home" onClick={() => navigate("/")}>
               Home
             </a>
           </li>
@@ -55,12 +56,17 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="hidden space-x-8 sm:flex items-center font-cormorant">
-        <a className="nav-hover" href="">
-          Login / Register
+        <a
+          className="nav-hover cursor-pointer"
+          onClick={() => navigate("/order")}
+          href="#order_home"
+        >
+          Order Now
         </a>
         <div className="border-[0.5px] #545454 h-[30px] border-color_gray" />
-        <a className="nav-hover cursor-pointer" onClick={()=>navigate("/order")} href="#order_home" >
-          Order Now
+
+        <a className="nav-hover" href="">
+          Login / Register
         </a>
       </div>
 
@@ -82,27 +88,32 @@ const Navbar = () => {
             className="text-xl space-y-4 font-cormorant text-color_golden"
             onClick={() => setIsToggle(false)}
           >
-            <li className="">
+            <li className="" onClick={()=>navigate('/')}>
               <a className="nav-hover" href="#home">
                 Home
               </a>
             </li>
-            <li className="">
+            <li className="" onClick={()=>navigate('/order')}>
+              <a className="nav-hover" href="#order_home">
+                Order
+              </a>
+            </li>
+            <li className="" onClick={()=>navigate('/')}>
               <a className="nav-hover" href="#about">
                 About
               </a>
             </li>
-            <li className="">
+            <li className="" onClick={()=>navigate('/')}>
               <a className="nav-hover" href="#menu">
                 Menu
               </a>
             </li>
-            <li className="">
+            <li className="" onClick={()=>navigate('/')}>
               <a className="nav-hover" href="#awards">
                 Awards
               </a>
             </li>
-            <li className="">
+            <li className="" onClick={()=>navigate('/')}>
               <a className="nav-hover" href="#contact">
                 Contact
               </a>

@@ -9,8 +9,8 @@ const Header = () => {
         id="home"
       >
         {/* block of text here */}
-        <div
-          className="app__wrapper_info"
+        <div 
+          className="app__wrapper_info mb-11 sm:mb-0"
           data-aos="fade-right"
           data-aos-duration="1200"
           data-aos-easing="ease-in-out"
@@ -22,12 +22,12 @@ const Header = () => {
               <h1 className="section-title">The Key To Fine Dining</h1>
             </div>
             <div className="lg:w-[70%]">
-              <p className="body-text mb-12 ">
+              <p className="body-text mb-12">
                 Sit tellus lobortis sed senectus vivamus molestie. Condimentum
                 volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
                 aliquam amet tellus
               </p>
-            </div>
+            </div >
             <Button text="Explore Menu" section="menu"/>
           </div>
         </div>

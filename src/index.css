@@ -11,7 +11,7 @@
 
 @layer components {
   .section-title {
-    @apply font-cormorant lg:text-[64px] text-[50px] text-color_golden tracking-wide font-medium;
+    @apply font-cormorant lg:text-[64px] text-[45px] text-color_golden tracking-wide font-medium;
   }
 }
 
