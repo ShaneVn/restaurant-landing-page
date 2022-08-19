@@ -33,22 +33,22 @@ const Navbar = () => {
               Home
             </a>
           </li>
-          <li className="">
+          <li className="" onClick={() => navigate("/")} >
             <a className="nav-hover" href="#about">
               About
             </a>
           </li>
-          <li className="">
+          <li className="" onClick={() => navigate("/")}>
             <a className="nav-hover" href="#menu">
               Menu
             </a>
           </li>
-          <li className="">
+          <li className="" onClick={() => navigate("/")}>
             <a className="nav-hover" href="#awards">
               Awards
             </a>
           </li>
-          <li className="">
+          <li className="" onClick={() => navigate("/")}>
             <a className="nav-hover" href="#contact">
               Contact
             </a>
