@@ -3,6 +3,7 @@ import { Button, OrderItem } from "../../components";
 import { images } from "../../constants";
 import OrderTitleLists from "../../components/OrderTitleLists/OrderTitleLists";
 import { data } from "../../constants";
+import "./OrderBody.css";
 
 function OrderBody() {
   const [firstSelected, setFirstSelected] = useState("Pizza");
@@ -15,7 +16,7 @@ function OrderBody() {
   const saladMenu = data.saladMenu;
   const pastaMenu = data.pastaMenu;
   const dessertMenu = data.dessertMenu;
-  const appetizerMenu = data.appetizerMenu
+  const appetizerMenu = data.appetizerMenu;
 
   useEffect(() => {
     switch (firstSelected) {
@@ -38,7 +39,7 @@ function OrderBody() {
       case "Dessert":
         setSecondData(dessertMenu);
         break;
-      case "Appetizer":  
+      case "Appetizer":
         setSecondData(appetizerMenu);
         break;
       default:
@@ -56,8 +57,8 @@ function OrderBody() {
       </h1>
 
       <ul
-        className="flex items-center p__cormorant mb-12 sm:space-x-[200px] space-x-[90px] 
-      border-t-[1px] border-b-[1px]  border-color_golden cursor-pointer "
+        className="flex items-center menuTitle mb-12 sm:space-x-[200px] space-x-[90px] 
+      border-t-[1px] border-b-[1px]  border-color_golden cursor-pointer"
       >
         {data.orderTitleListOne.map((title) => (
           <OrderTitleLists
@@ -93,7 +94,7 @@ function OrderBody() {
       </h1>
 
       <ul
-        className="flex items-center p__cormorant mb-12 sm:space-x-[200px] space-x-[90px] 
+        className="flex items-center menuTitle mb-12 sm:space-x-[200px] space-x-[90px] 
       border-t-[1px] border-b-[1px]  border-color_golden cursor-pointer "
       >
         {data.orderTitleListTwo.map((title) => (
