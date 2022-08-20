@@ -20,7 +20,10 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="bg-color_black section__padding flex flex-col xl:flex-row" id="gallery">
+    <div
+      className="bg-color_black section__padding flex flex-col xl:flex-row"
+      id="gallery"
+    >
       <div className="flex flex-col mr-[70px] xl:w-1/3 ">
         <SubHeading title="Instagram" />
         <h1 className="section-title mb-12"> Photo Gallery</h1>
@@ -56,7 +59,7 @@ const Gallery = () => {
         className="xl:w-2/3 w-full mt-12 xl:mt-0 xl:h-[500px] h-[450px] "
       >
         {galleryImages.map((img) => (
-          <SwiperSlide className="">
+          <SwiperSlide className="" key={Math.random()}>
             <img
               src={img}
               alt=""

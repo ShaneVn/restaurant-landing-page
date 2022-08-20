@@ -3,17 +3,16 @@ import images from "../../constants/images";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import {RiShoppingCartLine,RiShoppingCartFill } from "react-icons/ri"
-
-
-
+import { RiShoppingCartLine, RiShoppingCartFill } from "react-icons/ri";
+import { useRecoilState } from "recoil";
+import { cartState } from "../../atoms/atoms";
 
 // <GiHamburgerMenu/>
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState(false);
+  const [cart, setCart] = useRecoilState(cartState);
   const navigate = useNavigate();
 
-  console.log(isToggle);
   return (
     <div
       className="flex bg-color_black justify-between items-center py-5 lg:px-[100px] px-[50px] text-white fixed w-full z-50 top-0"
@@ -36,7 +35,7 @@ const Navbar = () => {
               Home
             </a>
           </li>
-          <li className="" onClick={() => navigate("/")} >
+          <li className="" onClick={() => navigate("/")}>
             <a className="nav-hover" href="#about">
               About
             </a>
@@ -59,9 +58,28 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="hidden space-x-8 sm:flex items-center font-cormorant">
-      <div className="cursor-pointer nav-hover group relative  ">
-        <RiShoppingCartLine fontSize={27} />
-        <div className=""></div>
+        <div className="  relative  ">
+          {cart.length > 0 ? (
+            <div className="relative">
+              <div className="absolute w-3 h-3 top-[-2px] right-[-5px] rounded-full bg-[#F08804]" />
+              <div className="nav-hover peer cursor-pointer">
+                <RiShoppingCartFill fontSize={27} />
+              </div>
+              <div
+                className="bg-white opacity-0 peer-hover:opacity-100 flex__center
+              group-hover:flex__center w-[150px] h-[50px] absolute
+               top-[50px] right-[-70px] rounded-xl duration-1000 ease-in-out"
+              >
+                {" "}
+                <h1 className="body-text text-color_black font-cormorant text-[20px] font-medium">
+                  You have {cart.length}{" "}
+                  <span>{cart.length > 1 ? "items" : "item"}</span>
+                </h1>
+              </div>
+            </div>
+          ) : (
+            <RiShoppingCartLine fontSize={27} />
+          )}
         </div>
         <a
           className="nav-hover cursor-pointer"
@@ -95,32 +113,32 @@ const Navbar = () => {
             className="text-xl space-y-4 font-cormorant text-color_golden"
             onClick={() => setIsToggle(false)}
           >
-            <li className="" onClick={()=>navigate('/')}>
+            <li className="" onClick={() => navigate("/")}>
               <a className="nav-hover" href="#home">
                 Home
               </a>
             </li>
-            <li className="" onClick={()=>navigate('/order')}>
+            <li className="" onClick={() => navigate("/order")}>
               <a className="nav-hover" href="#order_home">
                 Order
               </a>
             </li>
-            <li className="" onClick={()=>navigate('/')}>
+            <li className="" onClick={() => navigate("/")}>
               <a className="nav-hover" href="#about">
                 About
               </a>
             </li>
-            <li className="" onClick={()=>navigate('/')}>
+            <li className="" onClick={() => navigate("/")}>
               <a className="nav-hover" href="#menu">
                 Menu
               </a>
             </li>
-            <li className="" onClick={()=>navigate('/')}>
+            <li className="" onClick={() => navigate("/")}>
               <a className="nav-hover" href="#awards">
                 Awards
               </a>
             </li>
-            <li className="" onClick={()=>navigate('/')}>
+            <li className="" onClick={() => navigate("/")}>
               <a className="nav-hover" href="#contact">
                 Contact
               </a>

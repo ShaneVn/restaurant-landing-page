@@ -66,6 +66,7 @@ function OrderBody() {
             key={title.category + title.id}
             setSelected={setFirstSelected}
             active={firstSelected === title.category}
+            
           />
         ))}
       </ul>
@@ -80,6 +81,7 @@ function OrderBody() {
             name={data.name}
             price={data.price}
             key={data.name + data.id}
+            id = {data.name + data.id }
           />
         ))}
       </div>
@@ -116,6 +118,7 @@ function OrderBody() {
             name={data.name}
             price={data.price}
             key={data.name + data.id}
+            id = {data.name + data.id}
           />
         ))}
       </div>

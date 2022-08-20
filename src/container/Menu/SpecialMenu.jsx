@@ -43,7 +43,7 @@ const SpecialMenu = () => {
         </div>
 
         {/* middle imgage */}
-        <div class="">
+        <div>
           <img
             src={images.drink}
             alt="cocktails"

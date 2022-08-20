@@ -16,7 +16,7 @@ const Header = () => {
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
         >
-          <div class="space-y-7  ">
+          <div className="space-y-7  ">
             <SubHeading title={"Chase The New Flavor"} />
             <div className="lg:w-[70%]">
               <h1 className="section-title">The Key To Fine Dining</h1>
