@@ -79,8 +79,19 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <div className="cursor-pointer">
-              <RiShoppingCartLine fontSize={27} />
+            <div className="relative">
+              <div className="cursor-pointer peer nav-hover">
+                <RiShoppingCartLine fontSize={27} />
+              </div>
+              <div
+                className="bg-white opacity-0 peer-hover:opacity-100 flex__center
+          group-hover:flex__center w-[150px] h-[50px] absolute
+           top-[50px] right-[-70px] rounded-xl duration-1000 ease-in-out"
+              >
+                <h1 className="body-text text-color_black font-cormorant text-[20px] font-medium">
+                   No item in Cart
+                </h1>
+              </div>
             </div>
           )}
         </div>
