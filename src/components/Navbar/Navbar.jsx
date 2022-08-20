@@ -11,6 +11,7 @@ import { cartState } from "../../atoms/atoms";
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState(false);
   const [cart, setCart] = useRecoilState(cartState);
+  const [totalItmes, setTotalItems] = useState(0);
   const navigate = useNavigate();
 
   return (
@@ -72,13 +73,15 @@ const Navbar = () => {
               >
                 {" "}
                 <h1 className="body-text text-color_black font-cormorant text-[20px] font-medium">
-                  You have {cart.length}{" "}
+                  You have {cart.reduce((a, c) => a + c.quantity, 0)}
                   <span>{cart.length > 1 ? "items" : "item"}</span>
                 </h1>
               </div>
             </div>
           ) : (
-            <RiShoppingCartLine fontSize={27} />
+            <div className="cursor-pointer">
+              <RiShoppingCartLine fontSize={27} />
+            </div>
           )}
         </div>
         <a
