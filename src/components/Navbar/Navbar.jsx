@@ -63,9 +63,9 @@ const Navbar = () => {
           {cart.length > 0 ? (
             <div className="relative">
               <div className="absolute w-3 h-3 top-[-2px] right-[-5px] rounded-full bg-[#F08804]" />
-              <div className="nav-hover peer cursor-pointer">
+              <a className="nav-hover peer cursor-pointer" onClick={()=>navigate("/checkout")} href="#checkout">
                 <RiShoppingCartFill fontSize={27} />
-              </div>
+              </a>
               <div
                 className="bg-white opacity-0 peer-hover:opacity-100 flex__center
               group-hover:flex__center w-[150px] h-[50px] absolute
@@ -80,9 +80,9 @@ const Navbar = () => {
             </div>
           ) : (
             <div className="relative">
-              <div className="cursor-pointer peer nav-hover">
+              <a className="cursor-pointer peer nav-hover" onClick={()=>navigate("/checkout")} href="#checkout">
                 <RiShoppingCartLine fontSize={27} />
-              </div>
+              </a>
               <div
                 className="bg-white opacity-0 peer-hover:opacity-100 flex__center
           group-hover:flex__center w-[150px] h-[50px] absolute
@@ -97,7 +97,7 @@ const Navbar = () => {
         </div>
         <a
           className="nav-hover cursor-pointer"
-          onClick={() => navigate("/order")}
+          onClick={() => navigate("/order") }
           href="#order_home"
         >
           Order Now

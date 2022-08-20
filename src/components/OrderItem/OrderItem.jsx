@@ -38,7 +38,7 @@ function OrderItem({ desc, image, name, price, alt, id }) {
         <h1 className="p__cormorant mt-5">{name}</h1>
         <p className="body-text text-center">{desc}</p>
       </div>
-      <h1 className="p__cormorant">{price}</h1>
+      <h1 className="p__cormorant">${price}</h1>
       <div onClick={addItmesToCart}>
         <Button text="Add To Cart" />
       </div>

@@ -5,8 +5,10 @@ import MenuItem from './Menuitem/MenuItem';
 import Navbar from './Navbar/Navbar';
 import Button from "./Button/Button"
 import OrderItem from './OrderItem/OrderItem';
+import CheckOutItems from './CheckOutItems/CheckOutItems';
 
 export {
+  CheckOutItems,
   SubHeading,
   Newsletter,
   FooterOverlay,

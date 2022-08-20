@@ -17,6 +17,7 @@ import {
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
+import CheckOut from "./container/CheckOut/CheckOut";
 
 const App = () => (
   <div className="h-screen">
@@ -49,6 +50,18 @@ const App = () => (
               <Navbar />
               <Order />
               <OrderBody />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          exact
+          path="/checkout"
+          element={
+            <>
+              <Navbar />
+              <CheckOut />
               <Footer />
             </>
           }
