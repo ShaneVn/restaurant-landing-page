@@ -6,10 +6,10 @@ import { data } from "../../constants";
 import "./OrderBody.css";
 
 function OrderBody() {
-  const [firstSelected, setFirstSelected] = useState("Pizza");
+  const [firstSelected, setFirstSelected] = useState("Salad");
   const [firstData, setFirstData] = useState([]);
 
-  const [secondSelected, setSecondSelected] = useState("Dessert");
+  const [secondSelected, setSecondSelected] = useState("Appetizer");
   const [secondData, setSecondData] = useState([]);
 
   const pizzaMenu = data.pizzaMenu;
@@ -30,7 +30,7 @@ function OrderBody() {
         setFirstData(pastaMenu);
         break;
       default:
-        setFirstData(pizzaMenu);
+        setFirstData(saladMenu);
     }
   }, [firstSelected]);
 
@@ -43,7 +43,7 @@ function OrderBody() {
         setSecondData(appetizerMenu);
         break;
       default:
-        setSecondData(dessertMenu);
+        setSecondData(appetizerMenu);
     }
   }, [secondSelected]);
 

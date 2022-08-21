@@ -14,6 +14,8 @@ const Navbar = () => {
   const [totalItmes, setTotalItems] = useState(0);
   const navigate = useNavigate();
 
+
+
   return (
     <div
       className="flex bg-color_black justify-between items-center py-5 lg:px-[100px] px-[50px] text-white fixed w-full z-50 top-0"

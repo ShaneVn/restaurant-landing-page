@@ -45,6 +45,7 @@ function CheckOut() {
                 price={item.price}
                 quantity={item.quantity}
                 total={item.quantity * item.price}
+                id = {item.id}
               />
             ))}
           </div>
