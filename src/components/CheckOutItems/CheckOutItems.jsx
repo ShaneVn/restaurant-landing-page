@@ -42,8 +42,8 @@ function CheckOutItems({ image, name, price, quantity, total, id }) {
 
   return (
     <div className="flex flex-col  ">
-      <ul className="w-full flex items-center xl:justify-between  sm:flex-col xl:flex-row  ">
-        <li className="p__cormorant w-[100px] h-[100px] flex flex-col sm:flex-row  items-center ">
+      <ul className="w-full flex items-center justify-between   ">
+        <li className="p__cormorant w-[100px] h-[100px] flex flex-col lg:flex-row  items-center ">
           <img
             src={image}
             alt=""

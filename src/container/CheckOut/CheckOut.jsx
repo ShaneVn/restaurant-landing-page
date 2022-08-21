@@ -17,9 +17,12 @@ function CheckOut() {
   const orderTotalAfterTaxes = (taxes + totalBeforeTax).toFixed(2);
 
   return (
-    <div id="checkout" className="flex flex-col xl:flex-row section__padding app__bg bg-color_black min-h-screen items-center justify-between" >
-      <div className="  sm:w-[60%]  flex flex-col items-center ">
-        <div className="min-h-screen w-full flex flex-col items-center">
+    <div
+      id="checkout"
+      className="flex flex-col xl:flex-row section__padding app__bg bg-color_black min-h-screen items-center justify-between"
+    >
+      <div className=" w-full xl:w-[60%]  flex flex-col items-center ">
+        <div className="min-h-screen w-full flex flex-col items-center ">
           <h1 className="section-title mt-[60px] mb-12">Your Orders </h1>
 
           <div className="flex flex-col space-y-5 w-full">
@@ -43,10 +46,11 @@ function CheckOut() {
               />
             ))}
           </div>
-          {cart.length >0 &&
-          <div className=" xl:self-start mt-12" onClick={() => setCart([])}>
-            <Button text="clear all" />
-          </div> }
+          {cart.length > 0 && (
+            <div className=" xl:self-start my-12" onClick={() => setCart([])}>
+              <Button text="clear all" />
+            </div>
+          )}
         </div>
       </div>
 
@@ -66,7 +70,7 @@ function CheckOut() {
           {" "}
           Order Total: ${orderTotalAfterTaxes}
         </h1>
-        { cart.length > 0 && (<Button text="Place Order" />)}
+        {cart.length > 0 && <Button text="Place Order" />}
       </div>
     </div>
   );
