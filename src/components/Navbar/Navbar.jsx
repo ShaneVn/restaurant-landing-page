@@ -139,6 +139,11 @@ const Navbar = () => {
                 Order
               </a>
             </li>
+            <li className="" onClick={() => navigate("/checkout")}>
+              <a className="nav-hover" href="#checkout">
+                CheckOut
+              </a>
+            </li>
             <li className="" onClick={() => navigate("/")}>
               <a className="nav-hover" href="#about">
                 About

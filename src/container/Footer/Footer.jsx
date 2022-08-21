@@ -15,7 +15,7 @@ const Footer = () => {
         border-color_golden mt-5 "
         >
           <SubHeading title="Newsletter" imageCenter />
-          <h1 className="section-title">Subscribe To Our NewsLetter</h1>
+          <h1 className="section-title text-center">Subscribe To Our NewsLetter</h1>
           <p className="body-text text-color_white mb-12">
             And Never Miss Latest Updates!{" "}
           </p>
