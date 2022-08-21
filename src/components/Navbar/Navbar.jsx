@@ -14,8 +14,6 @@ const Navbar = () => {
   const [totalItmes, setTotalItems] = useState(0);
   const navigate = useNavigate();
 
-
-
   return (
     <div
       className="flex bg-color_black justify-between items-center py-5 lg:px-[100px] px-[50px] text-white fixed w-full z-50 top-0"
@@ -64,9 +62,17 @@ const Navbar = () => {
         <div className="  relative  ">
           {cart.length > 0 ? (
             <div className="relative">
-              <div className="absolute w-3 h-3 top-[-2px] right-[-5px] rounded-full bg-[#F08804]" />
-              <a className="nav-hover peer cursor-pointer" onClick={()=>navigate("/checkout")} href="#checkout">
-                <RiShoppingCartFill fontSize={27} />
+              <div className="absolute w-6 h-6 top-[-10px] right-[-10px] rounded-full bg-[#F08804] flex__center">
+                <h2 className="text-black font-bold text-xl">
+                  {cart.reduce((a, b) => a + b.quantity, 0)}
+                </h2>
+              </div>
+              <a
+                className="nav-hover peer cursor-pointer"
+                onClick={() => navigate("/checkout")}
+                href="#checkout"
+              >
+                <RiShoppingCartFill fontSize={35} />
               </a>
               <div
                 className="bg-white opacity-0 peer-hover:opacity-100 flex__center
@@ -82,8 +88,12 @@ const Navbar = () => {
             </div>
           ) : (
             <div className="relative">
-              <a className="cursor-pointer peer nav-hover" onClick={()=>navigate("/checkout")} href="#checkout">
-                <RiShoppingCartLine fontSize={27} />
+              <a
+                className="cursor-pointer peer nav-hover"
+                onClick={() => navigate("/checkout")}
+                href="#checkout"
+              >
+                <RiShoppingCartLine fontSize={35} />
               </a>
               <div
                 className="bg-white opacity-0 peer-hover:opacity-100 flex__center
@@ -91,22 +101,22 @@ const Navbar = () => {
            top-[50px] right-[-70px] rounded-xl duration-1000 ease-in-out"
               >
                 <h1 className="body-text text-color_black font-cormorant text-[20px] font-medium">
-                   No item in Cart
+                  No item in Cart
                 </h1>
               </div>
             </div>
           )}
         </div>
         <a
-          className="nav-hover cursor-pointer"
-          onClick={() => navigate("/order") }
+          className="nav-hover text-lg "
+          onClick={() => navigate("/order")}
           href="#order_home"
         >
           Order Now
         </a>
         <div className="border-[0.5px] #545454 h-[30px] border-color_gray" />
 
-        <a className="nav-hover" href="">
+        <a className="nav-hover text-lg" href="">
           Login / Register
         </a>
       </div>

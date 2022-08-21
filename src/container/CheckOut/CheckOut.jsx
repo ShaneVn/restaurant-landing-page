@@ -6,13 +6,10 @@ import { Button, CheckOutItems } from "../../components";
 function CheckOut() {
   const [cart, setCart] = useRecoilState(cartState);
 
-  const taxes =
-    Math.round(
-      cart.reduce((a, b) => a + b.quantity * b.price, 0) * 0.07 * 1e2
-    ) / 1e2;
-
   const totalBeforeTax =
     Math.round(cart.reduce((a, b) => a + b.quantity * b.price, 0) * 1e2) / 1e2;
+
+  const taxes = Math.round(totalBeforeTax * 0.0725 * 1e2) / 1e2;
 
   const orderTotalAfterTaxes = (taxes + totalBeforeTax).toFixed(2);
 
@@ -23,7 +20,9 @@ function CheckOut() {
     >
       <div className=" w-full xl:w-[60%]  flex flex-col items-center ">
         <div className="min-h-screen w-full flex flex-col items-center ">
-          <h1 className="section-title mt-[60px] mb-12">Your Orders </h1>
+          <h1 className="section-title mt-[60px] mb-12">
+            {cart.length > 0 ? "Your Orders" : "You Have No Orders Yet"}
+          </h1>
 
           <div className="flex flex-col space-y-5 w-full">
             <ul className="w-full flex items-center justify-between">
@@ -77,9 +76,3 @@ function CheckOut() {
 }
 
 export default CheckOut;
-
-{
-  /* <h1 className="section-title mt-[100px]">
-        Cart is empty, Please place an Order
-      </h1> */
-}

@@ -58,16 +58,17 @@ function CheckOutItems({ image, name, price, quantity, total, id }) {
         <div className="flex lg:space-x-6 space-x-3 items-center justify-center border-[1px] border-color_gray rounded-md lg:py-2 lg:px-5 mx-6 lg:mx-0 py-2 px-2">
           <div
             className=" cursor-pointer text-white nav-hover"
-            onClick={increaseItmes}
-          >
-            <AiOutlinePlus fontSize={15} />
-          </div>
-          <li className="p__cormorant">{quantity}</li>
-          <div
-            className=" cursor-pointer text-white nav-hover"
             onClick={decreaseItems}
           >
             <AiOutlineMinus fontSize={15} />
+          </div>
+
+          <li className="p__cormorant">{quantity}</li>
+          <div
+            className=" cursor-pointer text-white nav-hover"
+            onClick={increaseItmes}
+          >
+            <AiOutlinePlus fontSize={15} />
           </div>
         </div>
         <li className="p__cormorant">${total.toFixed(2)}</li>
