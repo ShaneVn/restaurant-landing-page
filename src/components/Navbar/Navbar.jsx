@@ -63,7 +63,7 @@ const Navbar = () => {
           {cart.length > 0 ? (
             <div className="relative">
               <div className="absolute w-6 h-6 top-[-10px] right-[-10px] rounded-full bg-[#F08804] flex__center">
-                <h2 className="text-black font-bold text-xl">
+                <h2 className="text-color_black font-semibold font-ubuntu">
                   {cart.reduce((a, b) => a + b.quantity, 0)}
                 </h2>
               </div>

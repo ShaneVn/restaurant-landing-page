@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         openSans: "'Open Sans', sans-serif",
         cormorant: "'Cormorant Upright', serif",
+        ubuntu :  "'Ubuntu' , serif",
       },
 
       colors: {
