@@ -1,35 +1,34 @@
 import { SubHeading } from "../../components";
 import { Button } from "../../components";
+import { header_bg } from "../../constants";
 
 const Header = () => {
   return (
-    <div className="bg-black ">
+    <div className="h-screen w-full relative" id="home">
+      <video
+        className="w-full h-full object-cover"
+        src={header_bg}
+        autoPlay
+        loop
+        muted
+      />
+      {/* block of text here */}
       <div
-        className="flex items-center justify-between min-h-screen section__padding app__header "
-        id="home"
+        className="flex flex-col items-center justify-center absolute inset-0 text-center"
+        data-aos="fade-right"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
       >
-        {/* block of text here */}
-        <div 
-          className="app__wrapper_info mb-8 sm:mb-0"
-          data-aos="fade-right"
-          data-aos-duration="1200"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-        >
-          <div className="space-y-7  ">
-            <SubHeading title={"Chase The New Flavor"} />
-            <div className="lg:w-[70%]">
-              <h1 className="section-title">The Key To Fine Dining</h1>
-            </div>
-            <div className="lg:w-[70%]">
-              <p className="body-text mb-12">
-                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
-                aliquam amet tellus
-              </p>
-            </div >
-            <Button text="Explore Menu" section="menu"/>
+        <div className="space-y-7  ">
+          <div className="">
+            <h1 className="section-title font-bold text-white">
+              The King <br />
+              of Fine Dining
+            </h1>
           </div>
+          <div className=""></div>
+          <Button text="Explore Menu" section="menu" />
         </div>
       </div>
     </div>
