@@ -45,7 +45,7 @@
 
 .location__background {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url("https://images.alphacoders.com/246/thumb-1920-246273.jpg");
+    url("./assets/location_background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -45,9 +45,11 @@ import sweet03 from "../assets/sweet03.jpg"
 import appetizer01 from "../assets/appetizer01.jpg"
 import appetizer02 from "../assets/appetizer02.jpg"
 import appetizer03 from "../assets/appetizer03.jpg"
+import location_background from "../assets/location_background.jpg"
 
 
 const images = {
+  location_background,
   appetizer01,
   appetizer02,
   appetizer03,
