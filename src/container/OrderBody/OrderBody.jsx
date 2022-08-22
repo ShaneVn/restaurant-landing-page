@@ -52,7 +52,7 @@ function OrderBody() {
       className="flex flex-col items-center bg-color_black section__padding"
       id="order_body"
     >
-      <h1 className="section-title mb-[50px] mt-3 text-center">
+      <h1 className="section-title mb-[50px] mt-3 text-center" id="order_menu">
         Choose Your favorite
       </h1>
 
@@ -66,7 +66,6 @@ function OrderBody() {
             key={title.category + title.id}
             setSelected={setFirstSelected}
             active={firstSelected === title.category}
-            
           />
         ))}
       </ul>
@@ -81,7 +80,7 @@ function OrderBody() {
             name={data.name}
             price={data.price}
             key={data.name + data.id}
-            id = {data.name + data.id }
+            id={data.name + data.id}
           />
         ))}
       </div>
@@ -118,7 +117,7 @@ function OrderBody() {
             name={data.name}
             price={data.price}
             key={data.name + data.id}
-            id = {data.name + data.id}
+            id={data.name + data.id}
           />
         ))}
       </div>

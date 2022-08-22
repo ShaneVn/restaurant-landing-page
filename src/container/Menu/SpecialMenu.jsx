@@ -73,7 +73,7 @@ const SpecialMenu = () => {
         </div>
       </div>
       <div className="mt-10" onClick={()=>navigate("/order")}>
-        <Button text="View More" section="order_home" />
+        <Button text="View More" section="order_menu" />
       </div>
     </div>
   );

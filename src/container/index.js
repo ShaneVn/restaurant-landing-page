@@ -10,8 +10,10 @@ import SpecialMenu from './Menu/SpecialMenu';
 import Order from './Order/Order';
 import OrderBody from './OrderBody/OrderBody';
 import PageNotFound from './PageNotFound/PageNotFound';
+import Location from './Location/Location';
 
 export {
+  Location,
   PageNotFound,
   AboutUs,
   Chef,

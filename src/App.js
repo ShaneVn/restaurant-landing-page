@@ -14,6 +14,7 @@ import {
   Order,
   OrderBody,
   PageNotFound,
+  Location
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
@@ -62,6 +63,18 @@ const App = () => (
             <>
               <Navbar />
               <CheckOut />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          exact
+          path="/location"
+          element={
+            <>
+              <Navbar />
+              <Location />
               <Footer />
             </>
           }
