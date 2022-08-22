@@ -24,7 +24,7 @@ const Header = () => {
           <div className="">
             <h1 className="section-title font-bold text-white">
               The King <br />
-              of Fine Dining
+              Of Fine Dining
             </h1>
           </div>
           <div className=""></div>
