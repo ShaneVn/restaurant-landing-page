@@ -7,7 +7,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col  w-full h-auto items-center app__bg ">
+    <div className="flex flex-col  w-full h-auto items-center app__bg text-center ">
       {/* top box for newsletter */}
       <div className="bg-color_black h-[250px]  w-full flex flex-col items-center pt-12 section__padding">
         <div

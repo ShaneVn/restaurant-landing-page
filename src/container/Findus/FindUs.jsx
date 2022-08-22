@@ -2,8 +2,12 @@ import React from "react";
 import { SubHeading } from "../../components";
 import { Button } from "../../components";
 import { images } from "../../constants";
+import { useNavigate } from "react-router-dom";
 
 const FindUs = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="flex__center app__bg section__padding flex-col xl:flex-row " id="contact">
       <div className="flex-1 flex flex-col mr-[80px] mb-[100px] xl:mb-0 self-start xl:self-center">
@@ -20,7 +24,9 @@ const FindUs = () => {
           <p className="font-openSans text-color_white tracking-[0.04em]">Sat - Sun: 10:00 am - 03:00 am</p>
         </div>
         <p></p>
-        <Button text="Visit Us" />
+        <a onClick={()=>navigate("/location")} href="#location">
+        <Button text="Visit Us"  />
+        </a>
       </div>
 
       <div className="flex-1 ">

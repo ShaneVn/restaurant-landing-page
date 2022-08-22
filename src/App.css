@@ -42,6 +42,16 @@
   background-attachment: fixed;
 }
 
+
+.location__background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("https://images.alphacoders.com/246/thumb-1920-246273.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 @media screen and (max-width: 1280px) {
   .app__header {
     background-position: bottom 0% right 20%;
@@ -57,7 +67,7 @@
 
 
 @media screen and (max-width: 767px) {
-  .order__header, .order__banner, .app__bg {
+  .order__header, .order__banner, .app__bg, .location__background {
     background-attachment: scroll;
   }
 }

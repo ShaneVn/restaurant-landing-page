@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { RiShoppingCartLine, RiShoppingCartFill } from "react-icons/ri";
 import { useRecoilState } from "recoil";
 import { cartState } from "../../atoms/atoms";
+import {MdLocationOn} from "react-icons/md";
 
 // <GiHamburgerMenu/>
 const Navbar = () => {
@@ -51,9 +52,9 @@ const Navbar = () => {
               Awards
             </a>
           </li>
-          <li className="" onClick={() => navigate("/")}>
-            <a className="nav-hover" href="#contact">
-              Contact
+          <li className="" onClick={() => navigate("/location")}>
+            <a className="nav-hover" href="#location">
+              Location
             </a>
           </li>
         </ul>
@@ -112,7 +113,7 @@ const Navbar = () => {
           onClick={() => navigate("/order")}
           href="#order_home"
         >
-          Order Now
+          Order Online
         </a>
         <div className="border-[0.5px] #545454 h-[30px] border-color_gray" />
 
@@ -127,7 +128,7 @@ const Navbar = () => {
 
       {isToggle && (
         <div
-          className="h-screen w-full flex flex-col fixed z-10 bg-color_black top-0 
+          className="h-screen w-full flex flex-col fixed z-50 bg-color_black top-0 
         left-0 justify-center items-center slide-bottom"
         >
           <MdOutlineRestaurantMenu
