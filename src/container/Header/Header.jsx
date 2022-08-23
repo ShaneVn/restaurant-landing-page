@@ -1,8 +1,11 @@
 import { SubHeading } from "../../components";
 import { Button } from "../../components";
 import { header_bg } from "../../constants";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+
+  const navigate = useNavigate()
   return (
     <div className="h-screen w-full relative" id="home">
       <video
@@ -11,6 +14,7 @@ const Header = () => {
         autoPlay
         loop
         muted
+        playsInline
       />
       {/* block of text here */}
       <div
@@ -27,8 +31,8 @@ const Header = () => {
               Of Fine Dining
             </h1>
           </div>
-          <div className=""></div>
-          <Button text="Explore Menu" section="menu" />
+          <div className="" onClick={()=>navigate("/order")}>
+          <Button text="Explore Menu" section="order_menu" /></div>
         </div>
       </div>
     </div>
