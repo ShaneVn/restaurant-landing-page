@@ -4,18 +4,18 @@ import { header_bg } from "../../constants";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="h-screen w-full relative" id="home">
       <video
         className="w-full h-full object-cover"
-        src={header_bg}
         autoPlay
         loop
         muted
         playsInline
-      />
+      >
+        <source src={header_bg} type="video/mp4" />
+      </video>
       {/* block of text here */}
       <div
         className="flex flex-col items-center justify-center absolute inset-0 text-center"
@@ -31,8 +31,9 @@ const Header = () => {
               Of Fine Dining
             </h1>
           </div>
-          <div className="" onClick={()=>navigate("/order")}>
-          <Button text="Explore Menu" section="order_menu" /></div>
+          <div className="" onClick={() => navigate("/order")}>
+            <Button text="Explore Menu" section="order_menu" />
+          </div>
         </div>
       </div>
     </div>
