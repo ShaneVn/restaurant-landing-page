@@ -1,20 +1,31 @@
 import { SubHeading } from "../../components";
 import { Button } from "../../components";
-import { header_bg } from "../../constants";
+import { header_bg, mobile_header } from "../../constants";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <div className="h-screen w-full relative" id="home">
+    <div className="h-screen w-full relative bg-color_black" id="home">
       <video
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover hidden sm:flex"
         autoPlay
         loop
         muted
         playsInline
       >
         <source src={header_bg} type="video/mp4" />
+      </video>
+
+
+      <video
+        className="w-full h-full flex sm:hidden"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={mobile_header} type="video/mp4" />
       </video>
       {/* block of text here */}
       <div
@@ -24,11 +35,13 @@ const Header = () => {
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
       >
-        <div className="space-y-7  ">
+        <div className="space-y-7 mb-[90px] sm:mb-0 ">
           <div className="">
             <h1 className="section-title font-bold text-white">
-              The King <br />
-              Of Fine Dining
+              Every Flavor
+            </h1>
+            <h1 className="section-title font-bold text-white">
+              Tells a Story
             </h1>
           </div>
           <div className="" onClick={() => navigate("/order")}>
