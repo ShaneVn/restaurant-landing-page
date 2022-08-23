@@ -116,8 +116,8 @@ const Navbar = () => {
           Order Online
         </a>
         <div className="border-[0.5px] #545454 h-[30px] border-color_gray" />
-
-        <a className="nav-hover text-lg" href="">
+        
+        <a className="nav-hover text-lg" onClick={()=>navigate("/signin")} href="#signin">
           Login / Register
         </a>
       </div>

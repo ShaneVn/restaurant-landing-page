@@ -14,11 +14,13 @@ import {
   Order,
   OrderBody,
   PageNotFound,
-  Location
+  Location,
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
 import CheckOut from "./container/CheckOut/CheckOut";
+import Payment from "./container/Payment/Payment";
+import Signin from "./container/Signin/Signin";
 
 const App = () => (
   <div className="h-screen">
@@ -63,6 +65,30 @@ const App = () => (
             <>
               <Navbar />
               <CheckOut />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          exact
+          path="/checkout/payment"
+          element={
+            <>
+              <Navbar />
+              <Payment />
+              <Footer />
+            </>
+          }
+        />
+
+        <Route
+          exact
+          path="/signin"
+          element={
+            <>
+              <Navbar />
+              <Signin />
               <Footer />
             </>
           }

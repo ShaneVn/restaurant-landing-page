@@ -2,9 +2,11 @@ import React from "react";
 import { useRecoilState } from "recoil";
 import { cartState } from "../../atoms/atoms";
 import { Button, CheckOutItems } from "../../components";
+import { useNavigate } from "react-router-dom";
 
 function CheckOut() {
   const [cart, setCart] = useRecoilState(cartState);
+  const navigate = useNavigate();
 
   const totalBeforeTax =
     Math.round(cart.reduce((a, b) => a + b.quantity * b.price, 0) * 1e2) / 1e2;
@@ -69,7 +71,12 @@ function CheckOut() {
           {" "}
           Order Total: ${orderTotalAfterTaxes}
         </h1>
-        {cart.length > 0 && <Button text="Place Order" />}
+        {cart.length > 0 && (
+          <div onClick={() => navigate("/checkout/payment")}>
+            {" "}
+            <Button text="Check Out" />{" "}
+          </div>
+        )}
       </div>
     </div>
   );
