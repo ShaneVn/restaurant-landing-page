@@ -6,8 +6,10 @@ import Navbar from './Navbar/Navbar';
 import Button from "./Button/Button"
 import OrderItem from './OrderItem/OrderItem';
 import CheckOutItems from './CheckOutItems/CheckOutItems';
+import CheckOutDetailsList from './CheckOutDetailsList/CheckOutDetailsList';
 
 export {
+  CheckOutDetailsList,
   CheckOutItems,
   SubHeading,
   Newsletter,

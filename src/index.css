@@ -9,23 +9,29 @@
   .nav-hover {
     @apply hover:text-color_golden duration-200 ease-in transition;
   }
-}
 
-@layer components {
   .section-title {
     @apply font-cormorant lg:text-[64px] text-[45px] text-color_golden tracking-wide font-medium;
   }
-}
 
-@layer components {
   .hover-image {
     @apply duration-300 ease-in-out hover:scale-110 cursor-pointer;
   }
-}
 
-@layer components {
   .body-text {
     @apply leading-8 font-openSans text-color_grey tracking-wide;
+  }
+
+  .flex-center{
+    @apply flex items-center justify-center
+  }
+
+  .flex-between{
+    @apply flex items-center justify-between
+  }
+
+  .flex-col-center{
+    @apply flex flex-col items-center justify-center
   }
 }
 
