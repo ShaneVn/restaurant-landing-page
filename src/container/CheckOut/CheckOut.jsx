@@ -3,6 +3,7 @@ import { useRecoilState } from "recoil";
 import { cartState } from "../../atoms/atoms";
 import { Button, CheckOutDetailsList, CheckOutItems } from "../../components";
 import { useNavigate } from "react-router-dom";
+import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 
 function CheckOut() {
   const [cart, setCart] = useRecoilState(cartState);
@@ -18,17 +19,16 @@ function CheckOut() {
   const orderTotalAfterTaxes = (taxes + totalBeforeTax).toFixed(2);
 
   return (
-    <div className="section__padding app__bg">
+    <div className="section__padding app__bg min-h-screen" id="checkout">
       <h1 className="section-title mt-[60px] ">
         {cart.length > 0 ? "Your Orders" : "You Have No Orders Yet"}
       </h1>
       <div
-        id="checkout"
         className="flex flex-col 2xl:flex-row   
-      min-h-screen items-center justify-between 2xl:items-start mt-12"
+       items-center 2xl:justify-between 2xl:items-start mt-12 "
       >
-        <div className=" w-full 2xl:w-[60%]  flex flex-col items-center ">
-          <div className="min-h-screen w-full flex flex-col items-center ">
+        <div className=" w-full 2xl:w-[60%]  flex flex-col items-center mb-[4rem] ">
+          <div className="w-full flex flex-col items-center ">
             <div className="flex flex-col space-y-5 w-full">
               <ul className="w-full flex items-center justify-between p__cormorant">
                 <li>PRODUCT</li>
@@ -58,7 +58,7 @@ function CheckOut() {
           </div>
         </div>
 
-        <div className="flex-col-center font-openSans tracking-wide text-white w-[70%] 2xl:w-[20%] space-y-12 self-start md:w-[50%] mt-[-20%] 2xl:mt-0">
+        <div className="flex-col-center font-openSans tracking-wide text-white w-[70%] 2xl:w-[20%] space-y-9 self-start md:w-[50%]">
           <CheckOutDetailsList category={"Total Items:"} info={totalItems} />
           <CheckOutDetailsList category={"Tax:"} info={`$${taxes}`} />
           <CheckOutDetailsList
@@ -73,13 +73,22 @@ function CheckOut() {
           {cart.length > 0 && (
             <a
               href="#payment"
-              className="bg-[#FFA41C] relative group duration-500 ease-in-out py-3 flex__center font-medium w-full rounded-lg text-color_black cursor-pointer "
+              className="bg-[#FFA41C] relative group py-3 flex__center font-medium w-full rounded-lg text-color_black cursor-pointer "
               onClick={() => navigate("/checkout/payment")}
             >
-              <div className="absolute inset-0 bg-color_black opacity-30 hidden group-hover:flex w-full h-full" />
+              <div className="absolute inset-0 bg-color_black  duration-300 ease-in-out opacity-0 group-hover:opacity-30 w-full h-full" />
               CheckOut
             </a>
           )}
+          <div className="border-b-2 border-color_gray w-full " />
+          <a
+            href="#order_body"
+            className="flex__center space-x-5 self-start mt-[-30px] nav-hover"
+            onClick = {()=>navigate("/order")}
+          >
+            <HiOutlineArrowNarrowLeft fontSize={25} />{" "}
+            <h1>Continue shopping</h1>
+          </a>
         </div>
       </div>
     </div>
