@@ -49,7 +49,7 @@ function CheckOut() {
           </div>
           {cart.length > 0 && (
             <div className=" xl:self-start my-12" onClick={() => setCart([])}>
-              <Button text="clear all" />
+              <Button text="Clear All" />
             </div>
           )}
         </div>

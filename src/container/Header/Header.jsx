@@ -19,7 +19,7 @@ const Header = () => {
 
 
       <video
-        className="w-full h-full flex sm:hidden"
+        className="w-full h-full sm:hidden"
         autoPlay
         loop
         muted
