@@ -33,6 +33,10 @@
   .flex-col-center{
     @apply flex flex-col items-center justify-center
   }
+
+  .checkout-text{
+    @apply font-openSans tracking-[0.04em] text-white 
+  }
 }
 
 :root {

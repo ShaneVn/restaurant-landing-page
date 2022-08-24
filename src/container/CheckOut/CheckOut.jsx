@@ -58,7 +58,7 @@ function CheckOut() {
           </div>
         </div>
 
-        <div className="flex-col-center font-openSans tracking-wide text-white w-[70%] 2xl:w-[20%] space-y-9 self-start md:w-[50%]">
+        <div className="flex-col-center checkout-text w-[70%] 2xl:w-[20%] space-y-9 self-start md:w-[50%]">
           <CheckOutDetailsList category={"Total Items:"} info={totalItems} />
           <CheckOutDetailsList category={"Tax:"} info={`$${taxes}`} />
           <CheckOutDetailsList

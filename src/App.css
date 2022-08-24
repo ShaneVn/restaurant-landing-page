@@ -112,21 +112,6 @@
   width: 80%;
 }
 
-.custom__button {
-  background-color: var(--color-crimson);
-  color: var(--color-black);
-  font-family: var(--font-base);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
-  padding: 0.5rem 1.5rem;
-  border-radius: 1px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 
 /* use for section subtitle */
 .p__cormorant {
@@ -159,9 +144,6 @@
   text-transform: capitalize;
 }
 
-.spoon__img {
-  width: 45px;
-}
 
 @media screen and (min-width: 2000px) {
   .custom__button,
@@ -194,14 +176,6 @@
   .app__wrapper {
     flex-direction: column;
   }
-
-  /* .app__wrapper_img {
-    margin: 5rem 0 0 0;
-  } */
-
-  /* .app__wrapper_img-reverse {
-    margin: 0 0 5rem 0;
-  } */
 
   .app__wrapper_img img {
     width: 100%;
@@ -243,28 +217,5 @@
   }
 }
 
-/* @media (max-width: 767px) {
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-} */
 
-@media screen and (min-width: 576px) {
-  .swiper-container {
-    width: 576px;
-  }
-}
 
-@media screen and (min-width: 1280px) {
-  .swiper-container {
-    width: 1280px;
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .swiper-container {
-    width: 1800px;
-  }
-}
