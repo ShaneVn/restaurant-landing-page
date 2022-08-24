@@ -43,18 +43,18 @@ function CheckOutItems({ image, name, price, quantity, total, id }) {
   return (
     <div className="flex flex-col  ">
       <ul className="w-full flex items-center justify-between   ">
-        <li className="p__cormorant w-[100px] h-[100px] flex flex-col lg:flex-row  items-center ">
+        <li className="p__cormorant w-[100px] lg:w-[100px] md:w-auto h-[100px] flex flex-col lg:flex-row lg:items-center  mb-5 sm:mb-12 md:mb-5 lg:mb-0">
           <img
             src={image}
             alt=""
-            className=" mr-5 object-cover w-full h-full"
+            className=" mr-5 object-cover w-full h-full "
           />
-          <div className="pb-5">
+          <div className="">
             <h2> {name} </h2>
           </div>
         </li>
 
-        <li className="p__cormorant xl:ml-[20px]">${price}</li>
+        <li className="p__cormorant ml-[10px] md:ml-[-50px] lg:ml-[20px]">${price}</li>
         <div className="flex lg:space-x-6 space-x-3 items-center justify-center border-[1px] border-color_gray rounded-md lg:py-2 lg:px-5 mx-6 lg:mx-0 py-2 px-2">
           <div
             className=" cursor-pointer text-white nav-hover"

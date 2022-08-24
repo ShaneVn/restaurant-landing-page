@@ -1,4 +1,3 @@
-import { SubHeading } from "../../components";
 import { Button } from "../../components";
 import { header_bg, mobile_header } from "../../constants";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +15,6 @@ const Header = () => {
       >
         <source src={header_bg} type="video/mp4" />
       </video>
-
 
       <video
         className="w-full h-full sm:hidden"
@@ -37,9 +35,7 @@ const Header = () => {
       >
         <div className="space-y-7 mb-[90px] sm:mb-0 ">
           <div className="">
-            <h1 className="section-title font-bold text-white">
-              Every Flavor
-            </h1>
+            <h1 className="section-title font-bold text-white">Every Flavor</h1>
             <h1 className="section-title font-bold text-white">
               Tells a Story
             </h1>

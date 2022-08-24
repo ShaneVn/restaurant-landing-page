@@ -18,9 +18,9 @@ function CheckOut() {
   return (
     <div
       id="checkout"
-      className="flex flex-col xl:flex-row section__padding app__bg bg-color_black min-h-screen items-center justify-between"
+      className="flex flex-col 2xl:flex-row section__padding app__bg bg-color_black min-h-screen items-center justify-between"
     >
-      <div className=" w-full xl:w-[60%]  flex flex-col items-center ">
+      <div className=" w-full 2xl:w-[60%]  flex flex-col items-center ">
         <div className="min-h-screen w-full flex flex-col items-center ">
           <h1 className="section-title mt-[60px] mb-12">
             {cart.length > 0 ? "Your Orders" : "You Have No Orders Yet"}
